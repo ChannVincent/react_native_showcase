@@ -35,7 +35,6 @@ const RouterComponent = () => {
 
 const styles = {
   sceneStyle: {
-    paddingTop: (Platform.OS === 'ios') ? 65 : 55
   },
   tabBarStyle: {
     backgroundColor: '#fff'

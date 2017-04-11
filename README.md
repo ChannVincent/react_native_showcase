@@ -36,14 +36,17 @@ Library list :
 - Navigation : react-native-router-flux
 - Skinning : native-base (split skinning depending on platform : https://nativebase.io/?ref=producthunt)
 
-## Roadmap MVP
+## Roadmap MVP (Minimum Valuable Product)
 
-- SplashScreen : first screen to start, after 5 seconds if no click detected start main flow
-- Tab Bar : Main flow that contains all controllers
-- ListView : 1st tab, onclick go to POIView
-- WebView : 2nd tab, assets loaded from local + custom behaviour
-- Keypad : 3rd tab, find your collection based on cartel, onValidate go to POIView
-- POIView : Detailed view with audio, image and text
+- RN-1 : init : configure project
+- RN-2 : navigation : set navigation screens with fake scenes
+- RN-3 : redux : set redux architecture to pass data between scenes
+- RN-4 : splash screen : first screen to start, after 5 seconds if no click detected start main flow
+- RN-5 : tab bar : Main flow that contains all controllers
+- RN-5 : list view : 1st tab, onclick go to POIView
+- RN-6 : web view : 2nd tab, assets loaded from local + custom behaviour
+- RN-7 : keypad : 3rd tab, find your collection based on cartel, onValidate go to POIView
+- RN-8 : poi view : Detailed view with audio, image and text
 
 ## Specifications
 

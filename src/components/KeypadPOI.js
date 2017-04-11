@@ -13,7 +13,7 @@ class KeypadPOI extends Component {
 
 const styles = {
   containerStyle: {
-    flex:1,
+    flex: 1,
     backgroundColor: '#def'
   }
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Scene, Router, Actions } from 'react-native-router-flux';
+import { Scene, Router } from 'react-native-router-flux';
 import { Platform, Text } from 'react-native';
 import ListPOI from './components/ListPOI';
 import KeypadPOI from './components/KeypadPOI';
@@ -27,8 +27,6 @@ const RouterComponent = () => {
             component={ ListPOI }
             icon={ TabIcon }
             sceneStyle={ styles.sceneStyle }
-            rightTitle="POI"
-            onRight={ () => { Actions.poiView() } }
             />
           <Scene
             key="tab2"

@@ -1,11 +1,15 @@
 import React, { Component } from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, TouchableOpacity } from 'react-native';
+import { connect } from 'react-redux';
+import { navigateToPOIView } from '../actions';
 
 class ListPOI extends Component {
   render() {
     return (
       <View style={ styles.containerStyle }>
-        <Text>ListPOI</Text>
+        <TouchableOpacity onPress={ this.props.navigateToPOIView }>
+          <Text>{ this.props.title }</Text>
+        </TouchableOpacity>
       </View>
     )
   }
@@ -18,4 +22,10 @@ const styles = {
   }
 }
 
-export default ListPOI;
+const mapStateToProps = (state, ownProps) => {
+  return {
+    title: 'ListPOI'
+  }
+}
+
+export default connect(mapStateToProps, { navigateToPOIView })(ListPOI);

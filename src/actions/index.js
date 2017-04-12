@@ -1,1 +1,1 @@
-export * from './AuthActions';
+export * from './NavigationActions';

@@ -11,7 +11,7 @@ class SplashScreen extends Component {
   componentWillMount() {
     setTimeout(
       this.startMain,
-      5000
+      2000
     );
   }
 

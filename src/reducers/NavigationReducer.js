@@ -5,12 +5,9 @@ const INITIAL_STATE = {
 }
 
 export default (state = INITIAL_STATE, action) => {
-  console.log(action);
-  console.log(NAVIGATION_POI_VIEW);
   switch (action.type) {
     case NAVIGATION_POI_VIEW:
-      console.log(NAVIGATION_POI_VIEW);
-      return { ...state, [action.payload.prop]: action.payload.value };
+      return { ...state, title: action.payload.title };
 
     default:
       console.log("default");

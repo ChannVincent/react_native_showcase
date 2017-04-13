@@ -20,6 +20,10 @@ const styles = {
   }
 }
 
+POIView.propTypes = {
+  title: React.PropTypes.string
+}
+
 const mapStateToProps = (state, ownProps) => {
     const { title } = state.navigation;
     return {

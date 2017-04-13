@@ -20,9 +20,10 @@ const styles = {
   }
 }
 
-const mapStateToProps = (states, ownProps) => {
+const mapStateToProps = (state, ownProps) => {
+    const { title } = state.navigation;
     return {
-      title: 'POIView'
+      title
     }
 }
 

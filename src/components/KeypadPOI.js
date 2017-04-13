@@ -7,7 +7,7 @@ class KeypadPOI extends Component {
   render() {
     return (
       <View style={ styles.containerStyle }>
-        <Text>this.props.title</Text>
+        <Text>{ this.props.title }</Text>
       </View>
     )
   }
@@ -20,9 +20,9 @@ const styles = {
   }
 }
 
-const mapStateToProps = (states, ownProps) => {
+const mapStateToProps = (state, ownProps) => {
     return {
-      title: KeypadPOI
+      title: 'KeypadPOI'
     }
 }
 

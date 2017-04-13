@@ -4,10 +4,14 @@ import { connect } from 'react-redux';
 import { navigateToPOIView } from '../actions';
 
 class ListPOI extends Component {
+  onRowPress() {
+    this.props.navigateToPOIView({ title: 'title sent from list' });
+  }
+
   render() {
     return (
       <View style={ styles.containerStyle }>
-        <TouchableOpacity onPress={ this.props.navigateToPOIView }>
+        <TouchableOpacity onPress={ this.onRowPress.bind(this) }>
           <Text>{ this.props.title }</Text>
         </TouchableOpacity>
       </View>

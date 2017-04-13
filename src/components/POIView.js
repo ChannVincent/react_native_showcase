@@ -7,7 +7,7 @@ class POIView extends Component {
   render() {
     return (
       <View style={ styles.containerStyle }>
-        <Text>{ this.props.title }</Text>
+          <Text>{ this.props.title }</Text>
       </View>
     )
   }

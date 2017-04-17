@@ -3,8 +3,6 @@ import { View, Text, Image } from 'react-native';
 import { connect } from 'react-redux';
 import {  } from '../actions';
 
-import pathWallet from './pathWallet';
-
 class POIView extends Component {
   render() {
     return (
@@ -12,7 +10,11 @@ class POIView extends Component {
           <Text>{ this.props.title }</Text>
           <Image
             style={{width: 100, height: 100}}
-            source={{ uri: pathWallet.lolcat }}
+            source={require('../../assets/images/lolcat.jpg')}
+          />
+          <Image
+            style={{width: 100, height: 100}}
+            source={require('../../assets/images/lolcat.jpg')}
           />
       </View>
     )

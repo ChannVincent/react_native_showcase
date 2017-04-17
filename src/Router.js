@@ -19,31 +19,39 @@ class TabIcon extends React.Component {
 const RouterComponent = () => {
     return (
       <Router>
-        <Scene key="splash" component={ SplashScreen } hideNavBar />
-        <Scene key="tabBar" tabs tabBarStyle={ styles.tabBarStyle }>
+        <Scene key="intro" initial>
           <Scene
-            key="tab1"
-            title="Tab #1"
-            component={ ListPOI }
-            icon={ TabIcon }
-            sceneStyle={ styles.sceneStyle }
-            />
-          <Scene
-            key="tab2"
-            title="Tab #2"
-            component={ KeypadPOI }
-            icon={ TabIcon }
-            sceneStyle={ styles.sceneStyle }
-            />
-          <Scene
-            key="tab3"
-            title="Tab #3"
-            component={ WebView }
-            icon={ TabIcon }
-            sceneStyle={ styles.sceneStyle }
+            key="splash"
+            component={ SplashScreen }
+            hideNavBar
             />
         </Scene>
-        <Scene key="poiView" title="POI title" component={ POIView } sceneStyle={ styles.sceneStyle } />
+        <Scene key="main">
+          <Scene key="tabBar" tabs tabBarStyle={ styles.tabBarStyle }>
+            <Scene
+              key="tab1"
+              title="Tab #1"
+              component={ ListPOI }
+              icon={ TabIcon }
+              sceneStyle={ styles.sceneStyle }
+              />
+            <Scene
+              key="tab2"
+              title="Tab #2"
+              component={ KeypadPOI }
+              icon={ TabIcon }
+              sceneStyle={ styles.sceneStyle }
+              />
+            <Scene
+              key="tab3"
+              title="Tab #3"
+              component={ WebView }
+              icon={ TabIcon }
+              sceneStyle={ styles.sceneStyle }
+              />
+          </Scene>
+          <Scene key="poiView" title="POI title" component={ POIView } sceneStyle={ styles.sceneStyle } />
+        </Scene>
       </Router>
     )
 }

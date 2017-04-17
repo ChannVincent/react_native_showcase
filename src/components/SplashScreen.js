@@ -5,7 +5,7 @@ import { Actions } from 'react-native-router-flux';
 class SplashScreen extends Component {
 
   startMain() {
-    Actions.tabBar({ animation: 'fade', type: 'reset' });
+    Actions.main({ animation: 'fade' });
   }
 
   componentWillMount() {

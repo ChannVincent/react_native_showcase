@@ -1,5 +1,7 @@
+const relativePathToProject = 'file:///Users/vincentchann/Documents/Git/react_native_showcase/';
+const pathToImages = 'assets/images/';
 const pathWallet = {
-    lolcat: 'file:///Users/pbillecocq/Documents/react_native_sandbox/react_native_showcase/assets/images/lolcat.jpg'
-  }
+  lolcat: relativePathToProject + pathToImages + 'lolcat.jpg'
+}
 
 export default pathWallet;

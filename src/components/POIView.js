@@ -13,9 +13,12 @@ class POIView extends Component {
             source={require('../../assets/images/lolcat.jpg')}
           />
           <Image
+            source={{uri: 'lolcat'}}
             style={{width: 100, height: 100}}
-            source={require('../../assets/images/lolcat.jpg')}
+            width={100}
+            height={100}
           />
+
       </View>
     )
   }

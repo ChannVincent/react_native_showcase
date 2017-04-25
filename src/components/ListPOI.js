@@ -5,7 +5,7 @@ import { navigateToPOIView } from '../actions';
 
 class ListPOI extends Component {
   onRowPress() {
-    this.props.navigateToPOIView({ title: 'title sent from list' });
+    this.props.navigateToPOIView({ title: 'title sent from list', urlImage: 'media62659_l' });
   }
 
   render() {

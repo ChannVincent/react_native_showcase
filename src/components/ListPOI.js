@@ -17,23 +17,21 @@ class ListPOI extends Component {
     return (
       <ListItem
         title={ poi.title }
+        onPress={ () => { this.onRowPress({title: poi.title, urlImage: 'media62659_l' }) } }
         />
     );
   }
 
-  onRowPress() {
-    this.props.navigateToPOIView({ title: 'title sent from list', urlImage: 'media62659_l' });
+  onRowPress({ title, urlImage }) {
+    this.props.navigateToPOIView({ title, urlImage });
   }
 
   render() {
     return (
       <View style={ styles.containerStyle }>
-        <TouchableOpacity onPress={ this.onRowPress.bind(this) }>
-          <Text>{ this.props.title }</Text>
-        </TouchableOpacity>
         <ListView
           dataSource={ this.dataSource }
-          renderRow={ this.renderRow }
+          renderRow={ this.renderRow.bind(this) }
           />
       </View>
     )

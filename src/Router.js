@@ -30,21 +30,21 @@ const RouterComponent = () => {
           <Scene key="tabBar" tabs tabBarStyle={ styles.tabBarStyle }>
             <Scene
               key="tab1"
-              title="Tab #1"
+              title="Liste"
               component={ ListPOI }
               icon={ TabIcon }
               sceneStyle={ styles.sceneStyle }
               />
             <Scene
               key="tab2"
-              title="Tab #2"
+              title="Clavier"
               component={ KeypadPOI }
               icon={ TabIcon }
               sceneStyle={ styles.sceneStyle }
               />
             <Scene
               key="tab3"
-              title="Tab #3"
+              title="WebView"
               component={ WebView }
               icon={ TabIcon }
               sceneStyle={ styles.sceneStyle }

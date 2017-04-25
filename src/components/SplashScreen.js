@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { View, Text, TouchableWithoutFeedback } from 'react-native';
+import { View, Image, Text, TouchableWithoutFeedback, Dimensions } from 'react-native';
 import { Actions } from 'react-native-router-flux';
+const { width, height } = Dimensions.get('window');
 
 class SplashScreen extends Component {
 
@@ -19,7 +20,11 @@ class SplashScreen extends Component {
     return (
       <TouchableWithoutFeedback onPress={ this.startMain }>
         <View style={ styles.containerStyle }>
-          <Text>SplashScreen</Text>
+          <Image
+            resizeMode='contain'
+            style={ styles.imageStyle }
+            source={ require('../../assets/launch_image.png') }
+          />
         </View>
       </TouchableWithoutFeedback>
     )
@@ -29,7 +34,12 @@ class SplashScreen extends Component {
 const styles = {
   containerStyle: {
     flex: 1,
-    backgroundColor: '#a59'
+    backgroundColor: '#000',
+    overflow: 'hidden'
+  },
+  imageStyle: {
+    width:width,
+    height: height
   }
 }
 

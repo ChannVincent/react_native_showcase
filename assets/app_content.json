@@ -1,0 +1,233 @@
+{
+    "schema_version": 3,
+    "idx": 1078,
+    "name": "Publication classique",
+    "tours": [
+        {
+            "idx": 1679,
+            "title": "Parcours plan",
+            "pois_idx": [
+                17922,
+                17923,
+                17924,
+                17925,
+                17926
+            ],
+            "map_idx": 531
+        }
+    ],
+    "pois": [
+        {
+            "idx": 17922,
+            "cartel_number": "1",
+            "title": "ShortText",
+            "subtitle": "Sous titre",
+            "short_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur condimentum varius erat a interdum. Nulla eu malesuada lectus.",
+            "long_text": "\u003Cp\u003E\r\n\t\u003Cspan style=\u0022background-color: initial;\u0022\u003ELorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur condimentum varius erat a interdum. Nulla eu malesuada lectus. Quisque faucibus mi dui, ut tincidunt massa ornare at. Nullam varius, lectus iaculis tempor eleifend, justo lacus luctus ante, quis pellentesque arcu enim sit amet mauris. Integer finibus ante at euismod imperdiet. Proin non pretium arcu. Nam tempus accumsan egestas. Maecenas ornare nibh sed egestas placerat.\u003C\/span\u003E\r\n\u003C\/p\u003E",
+            "related_pois_idx": [
+                17923,
+                17924
+            ],
+            "player_type": 0,
+            "medias_roles": [
+                {
+                    "media_idx": 62659,
+                    "role": 15
+                },
+                {
+                    "media_idx": 62660,
+                    "role": 25
+                },
+                {
+                    "media_idx": 62661,
+                    "role": 25
+                },
+                {
+                    "media_idx": 62662,
+                    "role": 25
+                },
+                {
+                    "media_idx": 62663,
+                    "role": 25
+                },
+                {
+                    "media_idx": 62659,
+                    "role": 25
+                }
+            ],
+            "map_points": [
+                {
+                    "map_idx": 531,
+                    "title": "ShortText",
+                    "map_x": 0.2617,
+                    "map_y": 0.6865
+                }
+            ]
+        },
+        {
+            "idx": 17923,
+            "cartel_number": "2",
+            "title": "FullScreen",
+            "subtitle": "Sous titre",
+            "long_text": "\u003Cp\u003E\r\n\t \u003Cspan style=\u0022background-color: initial;\u0022\u003ELorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur condimentum varius erat a interdum. Nulla eu malesuada lectus. Quisque faucibus mi dui, ut tincidunt massa ornare at. Nullam varius, lectus iaculis tempor eleifend, justo lacus luctus ante, quis pellentesque arcu enim sit amet mauris. Integer finibus ante at euismod imperdiet. Proin non pretium arcu. Nam tempus accumsan egestas. Maecenas ornare nibh sed egestas placerat.\u003C\/span\u003E\r\n\u003C\/p\u003E",
+            "player_type": 1,
+            "medias_roles": [
+                {
+                    "media_idx": 62660,
+                    "role": 15
+                }
+            ],
+            "map_points": [
+                {
+                    "map_idx": 531,
+                    "title": "FullScreen",
+                    "map_x": 0.85,
+                    "map_y": 0.3969
+                }
+            ]
+        },
+        {
+            "idx": 17924,
+            "cartel_number": "3",
+            "title": "LongText",
+            "short_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur condimentum varius erat a interdum. Nulla eu malesuada lectus. Quisque faucibus mi dui, ut tincidunt massa ornare at. Nullam varius, lectus iaculis tempor eleifend, justo lacus luctus ante, quis pellentesque arcu enim sit amet mauris. Integer finibus ante at euismod imperdiet. Proin non pretium arcu. Nam tempus accumsan egestas. Maecenas ornare nibh sed egestas placerat.\r\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur condimentum varius erat a interdum. Nulla eu malesuada lectus. Quisque faucibus mi dui, ut tincidunt massa ornare at. Nullam varius, lectus iaculis tempor eleifend, justo lacus luctus ante, quis pellentesque arcu enim sit amet mauris. Integer finibus ante at euismod imperdiet. Proin non pretium arcu. Nam tempus accumsan egestas. Maecenas ornare nibh sed egestas placerat.",
+            "long_text": "\u003Cp\u003E\r\n\t\u003Cspan style=\u0022background-color: initial;\u0022\u003ELorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur condimentum varius erat a interdum. Nulla eu malesuada lectus. Quisque faucibus mi dui, ut tincidunt massa ornare at. Nullam varius, lectus iaculis tempor eleifend, justo lacus luctus ante, quis pellentesque arcu enim sit amet mauris. Integer finibus ante at euismod imperdiet. Proin non pretium arcu. Nam tempus accumsan egestas. Maecenas ornare nibh sed egestas placerat.\u003C\/span\u003E\r\n\u003C\/p\u003E",
+            "player_type": 2,
+            "medias_roles": [
+                {
+                    "media_idx": 62661,
+                    "role": 15
+                }
+            ],
+            "map_points": [
+                {
+                    "map_idx": 531,
+                    "title": "LongText",
+                    "map_x": 0.515,
+                    "map_y": 0.1865
+                }
+            ]
+        },
+        {
+            "idx": 17925,
+            "cartel_number": "4",
+            "title": "WebView",
+            "short_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur condimentum varius erat a interdum. Nulla eu malesuada lectus. Quisque faucibus mi dui, ut tincidunt massa ornare at. Nullam varius, lectus iaculis tempor eleifend, justo lacus luctus ante, quis pellentesque arcu enim sit amet mauris. Integer finibus ante at euismod imperdiet. Proin non pretium arcu. Nam tempus accumsan egestas. Maecenas ornare nibh sed egestas placerat.",
+            "long_text": "\u003Cp\u003E\r\n\t \u003Cspan style=\u0022background-color: initial;\u0022\u003ELorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur condimentum varius erat a interdum. Nulla eu malesuada lectus. Quisque faucibus mi dui, ut tincidunt massa ornare at. Nullam varius, lectus iaculis tempor eleifend, justo lacus luctus ante, quis pellentesque arcu enim sit amet mauris. Integer finibus ante at euismod imperdiet. Proin non pretium arcu. Nam tempus accumsan egestas. Maecenas ornare nibh sed egestas placerat.\u003C\/span\u003E\r\n\u003C\/p\u003E",
+            "player_type": 3,
+            "medias_roles": [
+                {
+                    "media_idx": 62662,
+                    "role": 14
+                },
+                {
+                    "media_idx": 62670,
+                    "role": 15
+                }
+            ],
+            "map_points": [
+                {
+                    "map_idx": 531,
+                    "title": "WebView",
+                    "map_x": 0.6958,
+                    "map_y": 0.776
+                }
+            ]
+        },
+        {
+            "idx": 17926,
+            "cartel_number": "5",
+            "title": "FatherSon",
+            "short_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur condimentum varius erat a interdum. Nulla eu malesuada lectus. Quisque faucibus mi dui, ut tincidunt massa ornare at. Nullam varius, lectus iaculis tempor eleifend, justo lacus luctus ante, quis pellentesque arcu enim sit amet mauris. Integer finibus ante at euismod imperdiet. Proin non pretium arcu. Nam tempus accumsan egestas. Maecenas ornare nibh sed egestas placerat.",
+            "long_text": "\u003Cp\u003E\r\n\t\u003Cspan style=\u0022background-color: initial;\u0022\u003ELorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur condimentum varius erat a interdum. Nulla eu malesuada lectus. Quisque faucibus mi dui, ut tincidunt massa ornare at. Nullam varius, lectus iaculis tempor eleifend, justo lacus luctus ante, quis pellentesque arcu enim sit amet mauris. Integer finibus ante at euismod imperdiet. Proin non pretium arcu. Nam tempus accumsan egestas. Maecenas ornare nibh sed egestas placerat.\u003C\/span\u003E\r\n\u003C\/p\u003E",
+            "related_pois_idx": [
+                17922,
+                17923,
+                17924,
+                17925
+            ],
+            "player_type": 4,
+            "medias_roles": [
+                {
+                    "media_idx": 62663,
+                    "role": 15
+                }
+            ],
+            "map_points": [
+                {
+                    "map_idx": 531,
+                    "title": "FatherSon",
+                    "map_x": 0.1883,
+                    "map_y": 0.2313
+                }
+            ]
+        }
+    ],
+    "maps": [
+        {
+            "idx": 531,
+            "title": "Plan",
+            "geo_localized": false,
+            "media_role": {
+                "media_idx": 62664,
+                "role": 18
+            }
+        }
+    ],
+    "medias": [
+        {
+            "idx": 62659,
+            "media_category": 1,
+            "no_zoom": false,
+            "full_width": 1520,
+            "full_height": 855,
+            "filename": "media62659"
+        },
+        {
+            "idx": 62660,
+            "media_category": 1,
+            "no_zoom": true,
+            "full_width": 1920,
+            "full_height": 1080,
+            "filename": "media62660"
+        },
+        {
+            "idx": 62661,
+            "media_category": 1,
+            "summary": "\u003Ch2\u003EImage avec \u003C\/h2\u003E\r\n\u003Cp style=\u0022margin-left: 20px;\u0022\u003E\r\n\t descirption et mise en forme\r\n\u003C\/p\u003E\r\n\u003Col\u003E\r\n\t\u003Cli\u003Etest\u003C\/li\u003E\r\n\t\u003Cli\u003E\u003Cstrong\u003Etest gras\u003C\/strong\u003E\u003C\/li\u003E\r\n\t\u003Cli\u003E\u003Cstrong\u003E\u003Cem\u003Etest italique\u003C\/em\u003E\u003C\/strong\u003E\u003C\/li\u003E\r\n\u003C\/ol\u003E",
+            "no_zoom": false,
+            "full_width": 2560,
+            "full_height": 1440,
+            "filename": "media62661"
+        },
+        {
+            "idx": 62662,
+            "media_category": 1,
+            "no_zoom": false,
+            "full_width": 640,
+            "full_height": 960,
+            "filename": "media62662"
+        },
+        {
+            "idx": 62663,
+            "media_category": 1,
+            "no_zoom": false,
+            "full_width": 1600,
+            "full_height": 1200,
+            "filename": "media62663"
+        },
+        {
+            "idx": 62670,
+            "media_category": 9,
+            "filename": "media62670"
+        },
+        {
+            "idx": 62664,
+            "media_category": 1,
+            "no_zoom": false,
+            "full_width": 1002,
+            "full_height": 802,
+            "filename": "media62664"
+        }
+    ]
+}

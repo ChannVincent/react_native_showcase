@@ -9,16 +9,9 @@ class POIView extends Component {
       <View style={ styles.containerStyle }>
           <Text>{ this.props.title }</Text>
           <Image
+            source={{uri: 'media62659_l'}}
             style={{width: 100, height: 100}}
-            source={require('../../assets/images/lolcat.jpg')}
           />
-          <Image
-            source={{uri: 'lolcat'}}
-            style={{width: 100, height: 100}}
-            width={100}
-            height={100}
-          />
-
       </View>
     )
   }

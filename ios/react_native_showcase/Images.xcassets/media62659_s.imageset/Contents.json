@@ -2,17 +2,15 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "lolcat.jpg",
+      "filename" : "media62659_s.jpg",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "lolcat-1.jpg",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "lolcat-2.jpg",
       "scale" : "3x"
     }
   ],

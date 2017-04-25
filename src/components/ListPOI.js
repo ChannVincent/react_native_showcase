@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { View, Text, TouchableOpacity, ListView } from 'react-native';
 import { connect } from 'react-redux';
 import { navigateToPOIView } from '../actions';
+import ListItem from './ListItem';
 
 class ListPOI extends Component {
   componentWillMount() {
@@ -14,7 +15,9 @@ class ListPOI extends Component {
 
   renderRow(poi) {
     return (
-      <Text>{ poi.title }</Text>
+      <ListItem
+        title={ poi.title }
+        />
     );
   }
 

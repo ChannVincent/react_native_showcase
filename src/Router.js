@@ -33,21 +33,21 @@ const RouterComponent = () => {
               title="Liste"
               component={ ListPOI }
               icon={ TabIcon }
-              sceneStyle={ styles.sceneStyle }
+              sceneStyle={ styles.sceneTabStyle }
               />
             <Scene
               key="tab2"
               title="Clavier"
               component={ KeypadPOI }
               icon={ TabIcon }
-              sceneStyle={ styles.sceneStyle }
+              sceneStyle={ styles.sceneTabStyle }
               />
             <Scene
               key="tab3"
               title="WebView"
               component={ WebView }
               icon={ TabIcon }
-              sceneStyle={ styles.sceneStyle }
+              sceneStyle={ styles.sceneTabStyle }
               />
           </Scene>
           <Scene key="poiView" title="POI title" component={ POIView } sceneStyle={ styles.sceneStyle } />
@@ -59,6 +59,10 @@ const RouterComponent = () => {
 const styles = {
   sceneStyle: {
     marginTop: (Platform.OS === 'ios') ? 64 : 54
+  },
+  sceneTabStyle: {
+    marginTop: (Platform.OS === 'ios') ? 64 : 54,
+    marginBottom: 50
   },
   tabBarStyle: {
     backgroundColor: '#eee'

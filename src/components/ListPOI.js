@@ -18,7 +18,7 @@ class ListPOI extends Component {
     return (
       <ListItem
         title={ poi.title }
-        onPress={ () => { this.onRowPress({title: poi.title, urlImage: mediaImage.filename + "_l" }) } }
+        onPress={ () => { this.onRowPress({title: poi.title, urlImage: mediaImage.filename + "_l", currentPOI: poi }) } }
         urlImage={ (mediaImage != undefined) ? mediaImage.filename + "_l" : "error_image" }
         />
     );
@@ -42,8 +42,8 @@ class ListPOI extends Component {
     }
   }
 
-  onRowPress({ title, urlImage }) {
-    this.props.navigateToPOIView({ title, urlImage });
+  onRowPress({ title, urlImage, currentPOI }) {
+    this.props.navigateToPOIView({ title, urlImage, currentPOI });
   }
 
   render() {
@@ -66,7 +66,6 @@ const styles = {
 }
 
 const mapStateToProps = (state, ownProps) => {
-  console.log(state.appContent);
   const { pois, medias } = state.appContent;
   return {
     title: 'ListPOI',

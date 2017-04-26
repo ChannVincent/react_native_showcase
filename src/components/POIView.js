@@ -1,31 +1,88 @@
 import React, { Component } from 'react';
-import { View, Text, Image } from 'react-native';
+import { View, Text, Image, Dimensions, ScrollView } from 'react-native';
 import { connect } from 'react-redux';
 import { Actions } from 'react-native-router-flux';
 import {  } from '../actions';
+const { width, height } = Dimensions.get('window');
 
 class POIView extends Component {
   componentWillMount() {
-    Actions.refresh({title: this.props.title })
+    Actions.refresh({title: this.props.currentPOI.title })
+  }
+
+  getMainImageMedia() {
+    var player_role = 15;
+    var media_category_image = 1;
+    for (mediaRole of this.props.currentPOI.medias_roles) {
+      if (mediaRole.role == player_role && this.getMediaFromIdx(mediaRole.media_idx).media_category == media_category_image) {
+        return this.getMediaFromIdx(mediaRole.media_idx);
+      }
+    }
+  }
+
+  getMediaFromIdx(mediaIdx) {
+    for (media of this.props.medias) {
+      if (media.idx == mediaIdx) {
+        return media;
+      }
+    }
   }
 
   render() {
     return (
+      <ScrollView style={ styles.scrollContainerStyle }>
       <View style={ styles.containerStyle }>
-          <Text>{ this.props.title }</Text>
           <Image
-            source={{ uri: this.props.urlImage }}
-            style={{ width: 100, height: 100 }}
+            source={{ uri: this.getMainImageMedia().filename + "_l" }}
+            style={ styles.imageStyle }
           />
+          <Text style={ styles.titleStyle }>
+            { this.props.currentPOI.title }
+          </Text>
+          <Text style={ styles.subtitleStyle }>
+            { this.props.currentPOI.subtitle }
+          </Text>
+          <Text style={ styles.shortTextStyle }>
+            { this.props.currentPOI.short_text }
+          </Text>
       </View>
+      </ScrollView>
     )
   }
 }
 
 const styles = {
+  scrollContainerStyle: {
+    flex: 1
+  },
   containerStyle: {
     flex: 1,
-    backgroundColor: '#aab'
+    backgroundColor: '#fff'
+  },
+  imageStyle: {
+    width,
+    height: width
+  },
+  titleStyle: {
+    marginLeft: 20,
+    marginTop: 20,
+    fontSize: 20,
+    fontWeight: '500',
+    color: "#777"
+  },
+  subtitleStyle: {
+    margin: 10,
+    marginLeft: 20,
+    fontSize: 17,
+    fontWeight: '400',
+    color: "#777"
+  },
+  shortTextStyle: {
+    margin: 10,
+    marginLeft: 20,
+    fontSize: 16,
+    fontWeight: '400',
+    color: "#555"
   }
 }
 
@@ -34,10 +91,11 @@ POIView.propTypes = {
 }
 
 const mapStateToProps = (state, ownProps) => {
-    const { title, urlImage } = state.navigation;
+    const { currentPOI } = state.navigation;
+      const { medias } = state.appContent;
     return {
-      title,
-      urlImage
+      currentPOI,
+      medias
     }
 }
 

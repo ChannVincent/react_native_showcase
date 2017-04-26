@@ -20,7 +20,7 @@ const styles = {
     color: (Platform.OS === 'ios') ? '#000' : '#555',
     fontSize: 18,
     fontWeight: (Platform.OS === 'ios') ? '300' : '100',
-    margin: (Platform.OS === 'ios') ? 22 : 18
+    margin: (Platform.OS === 'ios') ? 22 : 16
   },
   buttonStyle: {
     flex: 1,

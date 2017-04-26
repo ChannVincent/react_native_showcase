@@ -61,7 +61,7 @@ const styles = {
     marginTop: (Platform.OS === 'ios') ? 64 : 54
   },
   tabBarStyle: {
-    backgroundColor: '#fff'
+    backgroundColor: '#eee'
   }
 }
 

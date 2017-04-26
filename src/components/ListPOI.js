@@ -14,12 +14,32 @@ class ListPOI extends Component {
   }
 
   renderRow(poi) {
+    var mediaImage = this.getMainImageOfPOI(poi);
     return (
       <ListItem
         title={ poi.title }
-        onPress={ () => { this.onRowPress({title: poi.title, urlImage: 'media62659_l' }) } }
+        onPress={ () => { this.onRowPress({title: poi.title, urlImage: mediaImage.filename + "_l" }) } }
+        urlImage={ (mediaImage != undefined) ? mediaImage.filename + "_l" : "error_image" }
         />
     );
+  }
+
+  getMainImageOfPOI(poi) {
+    var player_role = 15;
+    var media_category_image = 1;
+    for (mediaRole of poi.medias_roles) {
+      if (mediaRole.role == player_role && this.getMediaFromIdx(mediaRole.media_idx).media_category == media_category_image) {
+        return this.getMediaFromIdx(mediaRole.media_idx);
+      }
+    }
+  }
+
+  getMediaFromIdx(mediaIdx) {
+    for (media of this.props.medias) {
+      if (media.idx == mediaIdx) {
+        return media;
+      }
+    }
   }
 
   onRowPress({ title, urlImage }) {

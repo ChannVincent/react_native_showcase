@@ -3,7 +3,7 @@ import { Scene, Router } from 'react-native-router-flux';
 import { Platform, Text } from 'react-native';
 import ListPOI from './components/ListPOI';
 import KeypadPOI from './components/KeypadPOI';
-import WebView from './components/WebView';
+import WebViewScreen from './components/WebViewScreen';
 import POIView from './components/POIView';
 import SplashScreen from './components/SplashScreen';
 
@@ -45,7 +45,7 @@ const RouterComponent = () => {
             <Scene
               key="tab3"
               title="WebView"
-              component={ WebView }
+              component={ WebViewScreen }
               icon={ TabIcon }
               sceneStyle={ styles.sceneTabStyle }
               />

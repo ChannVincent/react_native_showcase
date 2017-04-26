@@ -18,8 +18,8 @@ class ListPOI extends Component {
     return (
       <ListItem
         title={ poi.title }
-        onPress={ () => { this.onRowPress({title: poi.title, urlImage: mediaImage.filename + "_l", currentPOI: poi }) } }
-        urlImage={ (mediaImage != undefined) ? mediaImage.filename + "_l" : "error_image" }
+        onPress={ () => { this.onRowPress({ currentPOI: poi }) } }
+        urlImage={ (mediaImage != undefined) ? mediaImage.filename + "_l" : "image_not_found" }
         />
     );
   }
@@ -42,8 +42,8 @@ class ListPOI extends Component {
     }
   }
 
-  onRowPress({ title, urlImage, currentPOI }) {
-    this.props.navigateToPOIView({ title, urlImage, currentPOI });
+  onRowPress({ currentPOI }) {
+    this.props.navigateToPOIView({ currentPOI });
   }
 
   render() {

@@ -33,7 +33,7 @@ class POIView extends Component {
       <ScrollView style={ styles.scrollContainerStyle }>
       <View style={ styles.containerStyle }>
           <Image
-            source={{ uri: this.getMainImageMedia().filename + "_l" }}
+            source={{ uri: (this.getMainImageMedia() != undefined) ? this.getMainImageMedia().filename + "_l" : "image_not_found" }}
             style={ styles.imageStyle }
           />
           <Text style={ styles.titleStyle }>

@@ -47,7 +47,7 @@ class TabIcon extends React.Component {
 
 const RouterComponent = () => {
     return (
-      <Router navigationBarStyle={ styles.navBarStyle }>
+      <Router navigationBarStyle={ styles.navBarStyle } leftButtonIconStyle={ styles.backButton }>
         <Scene key="intro" initial>
           <Scene
             key="splash"
@@ -97,7 +97,6 @@ const styles = {
     backgroundColor: '#fff',
     borderTopWidth: 2,
     borderTopColor: '#a65b62'
-
   },
   navBarStyle: {
     backgroundColor: '#fff',
@@ -110,6 +109,9 @@ const styles = {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center'
+  },
+  backButton: {
+    tintColor: '#a65b62'
   }
 }
 

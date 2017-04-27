@@ -12,7 +12,7 @@ To create a new project :
 - run cmd-P to build iOS project
 => you can now run your project on iOS or Android simulator
 
-To import this project : 
+To import this project :
 - cd path/to/your/project/folder
 - npm install (install node modules and all dependencies listed in your "packages.json")
 => once finished :
@@ -26,12 +26,15 @@ Run on Android :
 - To get the list of your emulators : /Users/vincentchann/Library/Android/sdk/tools/emulator -list-avds
 - To run your emulators : /Users/vincentchann/Library/Android/sdk/tools/emulator -avd Nexus_5_API_23 -netdelay none -netspeed full
 
+Generate release APK :
+- react-native run-android --configuration=release
+
 ## Setup
 
 IDE :
 - Neuclide single package built on top of Atom by Facebook specifically for React Native.
 
-Library list : 
+Library list :
 - Architecture : React, Redux, React-Redux, ReduxThunk.
 - Navigation : react-native-router-flux
 - Skinning : native-base (split skinning depending on platform : https://nativebase.io/?ref=producthunt)
@@ -52,7 +55,7 @@ Library list :
 - RN-11 : keypad : 3rd tab, find your collection based on cartel, onValidate go to POIView
 - RN-12 : poi view : Detailed view with audio, image and text
 
-- RN-? : test automation 
+- RN-? : test automation
 
 ## Specifications
 

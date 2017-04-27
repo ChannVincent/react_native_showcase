@@ -29,6 +29,13 @@ Run on Android :
 Generate release APK :
 - react-native run-android --configuration=release
 
+Generate release IPA :
+- generate JS bundle : react-native bundle --entry-file index.ios.js --platform ios --dev false --bundle-output ios/main.jsbundle --assets-dest ios
+- open react-native showcase with XCode
+- import & choose the right certificate
+- generate Archive
+- upload to iTunes Connect or export as Adhoc
+
 ## Setup
 
 IDE :

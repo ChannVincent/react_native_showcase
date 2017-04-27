@@ -12,7 +12,9 @@ class ListItem extends Component {
             <Text style={ styles.titleStyle }>{ title }</Text>
           </CardSection>
 
-          <CardSection>
+          <CardSection
+            style={ styles.cardStyle }
+          >
             <View style={ styles.imageContainerStyle }>
               <Image
                 style={ styles.imageStyle }
@@ -33,6 +35,9 @@ const styles = {
     paddingTop: 10,
     paddingBottom: 10
   },
+  cardStyle: {
+      padding: 0
+  },
   imageContainerStyle: {
       flex: 1,
       height: 250
@@ -40,7 +45,7 @@ const styles = {
   imageStyle: {
     flex: 1,
     height: 250,
-    resizeMode: 'contain'
+    resizeMode: 'cover'
   }
 }
 

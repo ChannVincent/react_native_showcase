@@ -81,7 +81,7 @@ class KeypadPOI extends Component {
         <KeypadButton
           onPress={ () => { this.onDeleteClick() } }
           textStyle={{ color: '#fff' }}
-          buttonStyle={{ backgroundColor: '#ff0000' }}>
+          buttonStyle={{ backgroundColor: '#a30b0b' }}>
           Delete
         </KeypadButton>
       )
@@ -106,7 +106,7 @@ class KeypadPOI extends Component {
         <KeypadButton
           onPress={ () => { this.onValidateClick() } }
           textStyle={{ color: '#fff' }}
-          buttonStyle={{ backgroundColor: '#1ecc2a' }}>
+          buttonStyle={{ backgroundColor: '#48a51a' }}>
           Ok
         </KeypadButton>
       )

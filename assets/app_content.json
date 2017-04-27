@@ -18,86 +18,6 @@
     ],
     "pois": [
         {
-            "idx": 18131,
-            "cartel_number": "1",
-            "title": "La Joconde",
-            "subtitle": "Leonardo Da Vinci",
-            "short_text": "La Joconde, ou Portrait de Mona Lisa, est un tableau de l\u0027artiste italien Léonard de Vinci, réalisé entre 1503 et 1506, qui représente un portrait mi-corps, probablement celui de la florentine Lisa Gherardini, épouse de Francesco del Giocondo. Acquise par François Ier, cette peinture à l\u0027huile sur panneau de bois de peuplier de 77 × 53 cm est exposée au musée du Louvre à Paris. La Joconde est l\u0027un des rares tableaux attribués de façon certaine à Léonard de Vinci.",
-            "long_text": "\u003Cp\u003E\r\n\t\u003Cspan style=\u0022background-color: initial;\u0022\u003ELa Joconde est devenue un tableau éminemment célèbre car, depuis sa réalisation, nombre d\u0027artistes l\u0027ont prise comme référence. À l\u0027époque romantique, les artistes ont été fascinés par ce tableau et ont contribué à développer le mythe qui l\u0027entoure, en faisant de ce tableau l’une des œuvres d\u0027art les plus célèbres du monde, si ce n\u0027est la plus célèbre : elle est en tout cas considérée comme l\u0027une des représentations d\u0027un visage féminin les plus célèbres au monde. Au xxie siècle, elle est devenue l\u0027objet d\u0027art le plus visité au monde, juste devant le diamant Hope, avec 20 000 visiteurs qui viennent l\u0027admirer et la photographier quotidiennement.\u003C\/span\u003E\r\n\u003C\/p\u003E",
-            "player_type": 0,
-            "medias_roles": [
-                {
-                    "media_idx": 63510,
-                    "role": 14
-                },
-                {
-                    "media_idx": 63511,
-                    "role": 15
-                }
-            ],
-            "map_points": [
-                {
-                    "map_idx": 556,
-                    "title": "La Joconde",
-                    "map_x": 0.7475,
-                    "map_y": 0.4151
-                }
-            ]
-        },
-        {
-            "idx": 18132,
-            "cartel_number": "2",
-            "title": "La Victoire de Samothrace",
-            "subtitle": "Auteur inconnu",
-            "long_text": "\u003Cp\u003E\r\n\t \u003Cspan style=\u0022background-color: initial;\u0022\u003EL\u0027inscription de dédicace est perdue, et nous ne possédons aucun témoignage antique sur la statue. Celle-ci ne peut donc être datée qu\u0027en fonction de son style, et par conséquent nul ne sait quelle victoire historique serait commémorée par ce monument. Plusieurs hypothèses ont été proposées.\u003C\/span\u003E\r\n\u003C\/p\u003E\r\n\u003Cp\u003E\r\n\t On a d\u0027abord considéré que les monnaies de Démétrios Poliorcète représentaient le monument lui-même ; le roi l\u0027aurait édifié en commémoration de sa victoire navale. À ce stade, la statue est attribuée à un sculpteur de la fin du ive siècle av. J.-C. ou du début du iiie siècle av. J.-C., par exemple un élève de Scopas, qui a travaillé à Samothrace. Cependant, Samothrace est alors sous le contrôle de Lysimaque, ennemi de Démétrios : il paraît peu probable que ce dernier ait pu y dédier un monument. Une autre hypothèse fait de la statue une offrande votive d\u0027Antigone II Gonatas après sa victoire contre les Ptolémées à Cos, dans les années -250 On sait en effet qu\u0027Antigone consacre une statue à Délos : il aurait pu en consacrer une autre à Samothrace, sanctuaire traditionnellement sous protection des Antigonides.\r\n\u003C\/p\u003E\r\n\u003Cp\u003E\r\n\t L\u0027hypothèse le plus souvent retenue a été avancée en 1931 par un savant allemand. Il a rapproché de la base de la statue un petit fragment d\u0027inscription en marbre de Lartos, trouvé par Champoiseau en 1891 dans l\u0027édifice de la Victoire. Sur ce fragment est gravé la fin d\u0027un nom en grec ancien …Σ ΡΟΔΙΟΣ \/ …S RHODIOS », qui aurait pu être celui de Pythocritos de Rhodes, nom qui se retrouve sur plusieurs bases de statue en bronze à Rhodes, où ce sculpteur était actif entre -200 et -165. À cette époque, de nombreuses batailles navales opposant d\u0027un côté Philippe V, souverain de Macédoine, et Antiochos III, souverain d\u0027Antioche, à Eumène II, souverain de Pergame, allié aux Romains et aux Rhodiens de l\u0027autre. Ces derniers l\u0027emportent après les batailles de Sidé et de Myonnésos, toutes deux en -190. Le monument de la Victoire serait donc une dédicace aux Grands Dieux de Samothrace, consécutive à ces batailles. Cependant, l\u0027appartenance du fragment à la base de la Victoire est impossible, car la présence d\u0027une cuvette d\u0027encastrement de petite taille interdit d\u0027y voir autre chose qu\u0027une base de statuette. Le sculpteur Pythocritos de Rhodes n\u0027est donc pas l\u0027auteur de la Victoire de Samothrace.\r\n\u003C\/p\u003E\r\n\u003Cp\u003E\r\n\t Une autre hypothèse a été proposée par le professeur Jean Richer qui a fait observer que le Navire sur lequel la statue est placée représente la constellation du Navire Argo : la proue de navire et la statue avaient été volontairement placées en biais dans la Fontaine de la Victoire où l\u0027ensemble se dressait dans l\u0027antiquité, au sein de l\u0027important Sanctuaire des Grands Dieux de Samothrace, de telle sorte que la Victoire regardait dans la direction du nord : selon Jean Richer, cette direction montre le chemin qui conduit à la porte des dieux identifiée au mont Hémos, et fait ainsi allusion à une victoire toute spirituelle ; car, dans cette orientation, l\u0027élan et le regard de la statue aboutissaient exactement à l\u0027angle nord-est de l’Anaktoron, siège des Petits Mystères, où l\u0027on donnait l\u0027initiation. Cet angle était ainsi le plus sacré du bâtiment.\r\n\u003C\/p\u003E\r\n\u003Cp\u003E\r\n\t La base en forme de navire a sûrement été réalisée à Rhodes, où on a trouvé des représentations de bateaux, en particulier un fragment de base en forme de proue de navire, dédiée dans le temple d\u0027Athéna sur l\u0027acropole de Lindos de Rhodes. Elle est faite de trois assises superposées de blocs en marbre de Lartos. Il existait donc bien à Rhodes des ateliers spécialisés dans ce genre de travail. Mais on ne trouve pas dans cette île de statue comparable en virtuosité à celle de la Victoire, qui a certainement été sculptée par un artiste venu d\u0027ailleurs. C\u0027est pourquoi la Victoire a pu être comparée à des personnages de la frise du Grand Autel de Pergame (vers -180--160). Cette frise en très haut relief représente une Gigantomachie, c\u0027est-à-dire le combat des dieux grecs contre les Géants monstrueux. Le dessin des ailes déployées des Géants, les attitudes énergiques et les draperies mouvementées des déesses ressemblent beaucoup à la statue de la Victoire. Il a même été suggéré que les deux œuvres auraient pu être créées par un même artiste.\r\n\u003C\/p\u003E",
-            "player_type": 1,
-            "medias_roles": [
-                {
-                    "media_idx": 63512,
-                    "role": 14
-                },
-                {
-                    "media_idx": 63513,
-                    "role": 15
-                }
-            ],
-            "map_points": [
-                {
-                    "map_idx": 556,
-                    "title": "La Victoire de Samothrace",
-                    "map_x": 0.6858,
-                    "map_y": 0.3541
-                }
-            ]
-        },
-        {
-            "idx": 18133,
-            "cartel_number": "3",
-            "title": "La Vénus de Milo",
-            "subtitle": "Alexandros d\u0027Antioche",
-            "short_text": "La Vénus de Milo est une célèbre sculpture grecque de la fin de l\u0027époque hellénistique (vers 130-100 av. J.-C.) qui pourrait représenter la déesse Aphrodite (Vénus dans la mythologie romaine). Découverte en 1820 sur l\u0027île de Milos (Milo étant une forme ancienne du nom de cette île), d\u0027où son nom, elle est actuellement conservée au musée du Louvre, à Paris.",
-            "long_text": "\u003Cp\u003E\r\n\tLe buste de la statue est mis au jour le 8 avril 1820 à Milos, une île de la mer Égée, faisant alors partie de l\u0027Empire ottoman, par un paysan nommé Yorgos Kentrotas à la recherche de pierres pour bâtir un mur autour de son champ. Par hasard, un élève officier de marine français, Olivier Voutier, assiste à la découverte. Passionné par l\u0027archéologie, alors une discipline récente, il incite le paysan à continuer de creuser. Apparaissent alors la partie inférieure de la statue et quelques fragments appartenant de toute évidence à la statue, comme le nœud du chignon. En l\u0027état, le buste n\u0027a déjà plus ses bras, comme en témoigne le dessin exécuté sur place par Voutier. Celui-ci prévient Louis Brest, vice-consul de France à Milo, pendant que le paysan, poursuivant sur sa lancée, met au jour d’autres fragments, dont deux piliers hermaïques, deux blocs inscrits, qui seront ensuite rejoints par un troisième, une main mutilée tenant une grenade (considérée par le vicomte de Marcellus comme d’un travail trop rudimentaire pour appartenir à la statue) et des morceaux de bras.\r\n\u003C\/p\u003E\r\n\u003Cp\u003E\r\n\tVoutier fait alors pression sur le consul pour que l\u0027État français achète la statue. De son côté, Jules Dumont d\u0027Urville, alors enseigne du vaisseau La Chevrette, dirigé par le capitaine et hydrographe Pierre-Henry Gauttier du Parc, a également vu la statue et alerte le marquis de Rivière, ambassadeur de France auprès de la Sublime Porte. Celui-ci dépêche sur place un secrétaire d\u0027ambassade, le comte de Marcellus, qui arrive en rade de Milo au moment où la statue est en train d\u0027embarquer sur un navire à destination de Constantinople pour le compte d\u0027un haut dignitaire turc, le drogman de l\u0027arsenal, Nicolas Marousi.\r\n\u003C\/p\u003E\r\n\u003Cp\u003E\r\n\tAu terme de tractations diverses, la statue est achetée en septembre 1820 pour le compte du marquis de Rivière, et ramenée en France en pleine propriété. Durant son voyage, la statue fera un étape au Château d\u0027Audour, à Dompierre-les-Ormes dans la propriété du comte de Marcellus.\r\n\u003C\/p\u003E\r\n\u003Cp\u003E\r\n\tUn moulage en plâtre de la statue, présentée comme \u0022la troisième reproduction de la vraie sculpture\u0022 grecque, offert par Louis XVIII au comte de Marcellus en 1822 pour le remercier d\u0027avoir assuré son transport en France est conservée, sur un socle gravé des mots Venus Victrix dans une salle au décor néo-classique du château Marcellus vers Marmande (47), qui est mis en vente pas ses trois co-propriétaires (reprod. coul. dans \u0022Sud-Ouest Mag\u0022 n°213 - 30\/04\/2016, p.22).\r\n\u003C\/p\u003E\r\n\u003Cp\u003E\r\n\tLe marquis de Rivière la fera offrir au roi Louis XVIII le 1er mars 1821, qui en fait aussitôt don au musée du Louvre. Comme toute œuvre endommagée, la Vénus entre dans l\u0027atelier de restauration du musée afin de subir l\u0027examen minutieux de son restaurateur en chef Bernard Lange. La rigueur d’analyse de ce dernier le conduit à écarter de ses projets de restauration toute conception fantaisiste. Il pense ainsi retrouver le mouvement initial de bras de la Vénus et envisage de recréer les parties manquantes selon les préceptes de restauration en vigueur à cette époque. Contre toute attente, mais avec l’appui du roi, il est finalement décidé de la présenter dans l\u0027état où elle a été trouvée, sans ajout ou complément[réf. nécessaire]. Les seules restaurations sont celles de l\u0027extrémité du nez, de la lèvre inférieure, du gros orteil du pied droit et de quelques raccords dans l\u0027épaisseur de la draperie.\r\n\u003C\/p\u003E\r\n\u003Cp\u003E\r\n\t\u003Cspan style=\u0022background-color: initial;\u0022\u003EUne polémique éclate dans les années 1890, quand une nouvelle tentative de restauration est entreprise : l\u0027autorité muséale confie à A. Miranoff, professeur à l\u0027Université de Moscou le soin de proposer un projet (cf. ci-contre). Il signale entre autres que deux cavités se trouvent présentes au niveau du dos de la déesse et suggère qu\u0027elles étaient présentes au moment de la découverte.\u003C\/span\u003E\r\n\u003C\/p\u003E",
-            "player_type": 2,
-            "medias_roles": [
-                {
-                    "media_idx": 63514,
-                    "role": 14
-                },
-                {
-                    "media_idx": 63515,
-                    "role": 15
-                }
-            ],
-            "map_points": [
-                {
-                    "map_idx": 556,
-                    "title": "La Vénus de Milo",
-                    "map_x": 0.8317,
-                    "map_y": 0.3628
-                }
-            ]
-        },
-        {
             "idx": 18134,
             "cartel_number": "4",
             "title": "La Liberté guidant le peuple",
@@ -108,7 +28,7 @@
             "medias_roles": [
                 {
                     "media_idx": 63520,
-                    "role": 14
+                    "role": 15
                 },
                 {
                     "media_idx": 63553,
@@ -151,6 +71,86 @@
                     "title": "Le Radeau de a Méduse",
                     "map_x": 0.8675,
                     "map_y": 0.6676
+                }
+            ]
+        },
+        {
+            "idx": 18133,
+            "cartel_number": "3",
+            "title": "La Vénus de Milo",
+            "subtitle": "Alexandros d\u0027Antioche",
+            "short_text": "La Vénus de Milo est une célèbre sculpture grecque de la fin de l\u0027époque hellénistique (vers 130-100 av. J.-C.) qui pourrait représenter la déesse Aphrodite (Vénus dans la mythologie romaine). Découverte en 1820 sur l\u0027île de Milos (Milo étant une forme ancienne du nom de cette île), d\u0027où son nom, elle est actuellement conservée au musée du Louvre, à Paris.",
+            "long_text": "\u003Cp\u003E\r\n\tLe buste de la statue est mis au jour le 8 avril 1820 à Milos, une île de la mer Égée, faisant alors partie de l\u0027Empire ottoman, par un paysan nommé Yorgos Kentrotas à la recherche de pierres pour bâtir un mur autour de son champ. Par hasard, un élève officier de marine français, Olivier Voutier, assiste à la découverte. Passionné par l\u0027archéologie, alors une discipline récente, il incite le paysan à continuer de creuser. Apparaissent alors la partie inférieure de la statue et quelques fragments appartenant de toute évidence à la statue, comme le nœud du chignon. En l\u0027état, le buste n\u0027a déjà plus ses bras, comme en témoigne le dessin exécuté sur place par Voutier. Celui-ci prévient Louis Brest, vice-consul de France à Milo, pendant que le paysan, poursuivant sur sa lancée, met au jour d’autres fragments, dont deux piliers hermaïques, deux blocs inscrits, qui seront ensuite rejoints par un troisième, une main mutilée tenant une grenade (considérée par le vicomte de Marcellus comme d’un travail trop rudimentaire pour appartenir à la statue) et des morceaux de bras.\r\n\u003C\/p\u003E\r\n\u003Cp\u003E\r\n\tVoutier fait alors pression sur le consul pour que l\u0027État français achète la statue. De son côté, Jules Dumont d\u0027Urville, alors enseigne du vaisseau La Chevrette, dirigé par le capitaine et hydrographe Pierre-Henry Gauttier du Parc, a également vu la statue et alerte le marquis de Rivière, ambassadeur de France auprès de la Sublime Porte. Celui-ci dépêche sur place un secrétaire d\u0027ambassade, le comte de Marcellus, qui arrive en rade de Milo au moment où la statue est en train d\u0027embarquer sur un navire à destination de Constantinople pour le compte d\u0027un haut dignitaire turc, le drogman de l\u0027arsenal, Nicolas Marousi.\r\n\u003C\/p\u003E\r\n\u003Cp\u003E\r\n\tAu terme de tractations diverses, la statue est achetée en septembre 1820 pour le compte du marquis de Rivière, et ramenée en France en pleine propriété. Durant son voyage, la statue fera un étape au Château d\u0027Audour, à Dompierre-les-Ormes dans la propriété du comte de Marcellus.\r\n\u003C\/p\u003E\r\n\u003Cp\u003E\r\n\tUn moulage en plâtre de la statue, présentée comme \u0022la troisième reproduction de la vraie sculpture\u0022 grecque, offert par Louis XVIII au comte de Marcellus en 1822 pour le remercier d\u0027avoir assuré son transport en France est conservée, sur un socle gravé des mots Venus Victrix dans une salle au décor néo-classique du château Marcellus vers Marmande (47), qui est mis en vente pas ses trois co-propriétaires (reprod. coul. dans \u0022Sud-Ouest Mag\u0022 n°213 - 30\/04\/2016, p.22).\r\n\u003C\/p\u003E\r\n\u003Cp\u003E\r\n\tLe marquis de Rivière la fera offrir au roi Louis XVIII le 1er mars 1821, qui en fait aussitôt don au musée du Louvre. Comme toute œuvre endommagée, la Vénus entre dans l\u0027atelier de restauration du musée afin de subir l\u0027examen minutieux de son restaurateur en chef Bernard Lange. La rigueur d’analyse de ce dernier le conduit à écarter de ses projets de restauration toute conception fantaisiste. Il pense ainsi retrouver le mouvement initial de bras de la Vénus et envisage de recréer les parties manquantes selon les préceptes de restauration en vigueur à cette époque. Contre toute attente, mais avec l’appui du roi, il est finalement décidé de la présenter dans l\u0027état où elle a été trouvée, sans ajout ou complément[réf. nécessaire]. Les seules restaurations sont celles de l\u0027extrémité du nez, de la lèvre inférieure, du gros orteil du pied droit et de quelques raccords dans l\u0027épaisseur de la draperie.\r\n\u003C\/p\u003E\r\n\u003Cp\u003E\r\n\t\u003Cspan style=\u0022background-color: initial;\u0022\u003EUne polémique éclate dans les années 1890, quand une nouvelle tentative de restauration est entreprise : l\u0027autorité muséale confie à A. Miranoff, professeur à l\u0027Université de Moscou le soin de proposer un projet (cf. ci-contre). Il signale entre autres que deux cavités se trouvent présentes au niveau du dos de la déesse et suggère qu\u0027elles étaient présentes au moment de la découverte.\u003C\/span\u003E\r\n\u003C\/p\u003E",
+            "player_type": 2,
+            "medias_roles": [
+                {
+                    "media_idx": 63514,
+                    "role": 14
+                },
+                {
+                    "media_idx": 63515,
+                    "role": 15
+                }
+            ],
+            "map_points": [
+                {
+                    "map_idx": 556,
+                    "title": "La Vénus de Milo",
+                    "map_x": 0.8317,
+                    "map_y": 0.3628
+                }
+            ]
+        },
+        {
+            "idx": 18132,
+            "cartel_number": "2",
+            "title": "La Victoire de Samothrace",
+            "subtitle": "Auteur inconnu",
+            "long_text": "\u003Cp\u003E\r\n\t \u003Cspan style=\u0022background-color: initial;\u0022\u003EL\u0027inscription de dédicace est perdue, et nous ne possédons aucun témoignage antique sur la statue. Celle-ci ne peut donc être datée qu\u0027en fonction de son style, et par conséquent nul ne sait quelle victoire historique serait commémorée par ce monument. Plusieurs hypothèses ont été proposées.\u003C\/span\u003E\r\n\u003C\/p\u003E\r\n\u003Cp\u003E\r\n\t On a d\u0027abord considéré que les monnaies de Démétrios Poliorcète représentaient le monument lui-même ; le roi l\u0027aurait édifié en commémoration de sa victoire navale. À ce stade, la statue est attribuée à un sculpteur de la fin du ive siècle av. J.-C. ou du début du iiie siècle av. J.-C., par exemple un élève de Scopas, qui a travaillé à Samothrace. Cependant, Samothrace est alors sous le contrôle de Lysimaque, ennemi de Démétrios : il paraît peu probable que ce dernier ait pu y dédier un monument. Une autre hypothèse fait de la statue une offrande votive d\u0027Antigone II Gonatas après sa victoire contre les Ptolémées à Cos, dans les années -250 On sait en effet qu\u0027Antigone consacre une statue à Délos : il aurait pu en consacrer une autre à Samothrace, sanctuaire traditionnellement sous protection des Antigonides.\r\n\u003C\/p\u003E\r\n\u003Cp\u003E\r\n\t L\u0027hypothèse le plus souvent retenue a été avancée en 1931 par un savant allemand. Il a rapproché de la base de la statue un petit fragment d\u0027inscription en marbre de Lartos, trouvé par Champoiseau en 1891 dans l\u0027édifice de la Victoire. Sur ce fragment est gravé la fin d\u0027un nom en grec ancien …Σ ΡΟΔΙΟΣ \/ …S RHODIOS », qui aurait pu être celui de Pythocritos de Rhodes, nom qui se retrouve sur plusieurs bases de statue en bronze à Rhodes, où ce sculpteur était actif entre -200 et -165. À cette époque, de nombreuses batailles navales opposant d\u0027un côté Philippe V, souverain de Macédoine, et Antiochos III, souverain d\u0027Antioche, à Eumène II, souverain de Pergame, allié aux Romains et aux Rhodiens de l\u0027autre. Ces derniers l\u0027emportent après les batailles de Sidé et de Myonnésos, toutes deux en -190. Le monument de la Victoire serait donc une dédicace aux Grands Dieux de Samothrace, consécutive à ces batailles. Cependant, l\u0027appartenance du fragment à la base de la Victoire est impossible, car la présence d\u0027une cuvette d\u0027encastrement de petite taille interdit d\u0027y voir autre chose qu\u0027une base de statuette. Le sculpteur Pythocritos de Rhodes n\u0027est donc pas l\u0027auteur de la Victoire de Samothrace.\r\n\u003C\/p\u003E\r\n\u003Cp\u003E\r\n\t Une autre hypothèse a été proposée par le professeur Jean Richer qui a fait observer que le Navire sur lequel la statue est placée représente la constellation du Navire Argo : la proue de navire et la statue avaient été volontairement placées en biais dans la Fontaine de la Victoire où l\u0027ensemble se dressait dans l\u0027antiquité, au sein de l\u0027important Sanctuaire des Grands Dieux de Samothrace, de telle sorte que la Victoire regardait dans la direction du nord : selon Jean Richer, cette direction montre le chemin qui conduit à la porte des dieux identifiée au mont Hémos, et fait ainsi allusion à une victoire toute spirituelle ; car, dans cette orientation, l\u0027élan et le regard de la statue aboutissaient exactement à l\u0027angle nord-est de l’Anaktoron, siège des Petits Mystères, où l\u0027on donnait l\u0027initiation. Cet angle était ainsi le plus sacré du bâtiment.\r\n\u003C\/p\u003E\r\n\u003Cp\u003E\r\n\t La base en forme de navire a sûrement été réalisée à Rhodes, où on a trouvé des représentations de bateaux, en particulier un fragment de base en forme de proue de navire, dédiée dans le temple d\u0027Athéna sur l\u0027acropole de Lindos de Rhodes. Elle est faite de trois assises superposées de blocs en marbre de Lartos. Il existait donc bien à Rhodes des ateliers spécialisés dans ce genre de travail. Mais on ne trouve pas dans cette île de statue comparable en virtuosité à celle de la Victoire, qui a certainement été sculptée par un artiste venu d\u0027ailleurs. C\u0027est pourquoi la Victoire a pu être comparée à des personnages de la frise du Grand Autel de Pergame (vers -180--160). Cette frise en très haut relief représente une Gigantomachie, c\u0027est-à-dire le combat des dieux grecs contre les Géants monstrueux. Le dessin des ailes déployées des Géants, les attitudes énergiques et les draperies mouvementées des déesses ressemblent beaucoup à la statue de la Victoire. Il a même été suggéré que les deux œuvres auraient pu être créées par un même artiste.\r\n\u003C\/p\u003E",
+            "player_type": 1,
+            "medias_roles": [
+                {
+                    "media_idx": 63512,
+                    "role": 14
+                },
+                {
+                    "media_idx": 63513,
+                    "role": 15
+                }
+            ],
+            "map_points": [
+                {
+                    "map_idx": 556,
+                    "title": "La Victoire de Samothrace",
+                    "map_x": 0.6858,
+                    "map_y": 0.3541
+                }
+            ]
+        },
+        {
+            "idx": 18131,
+            "cartel_number": "1",
+            "title": "La Joconde",
+            "subtitle": "Leonardo Da Vinci",
+            "short_text": "La Joconde, ou Portrait de Mona Lisa, est un tableau de l\u0027artiste italien Léonard de Vinci, réalisé entre 1503 et 1506, qui représente un portrait mi-corps, probablement celui de la florentine Lisa Gherardini, épouse de Francesco del Giocondo. Acquise par François Ier, cette peinture à l\u0027huile sur panneau de bois de peuplier de 77 × 53 cm est exposée au musée du Louvre à Paris. La Joconde est l\u0027un des rares tableaux attribués de façon certaine à Léonard de Vinci.",
+            "long_text": "\u003Cp\u003E\r\n\t\u003Cspan style=\u0022background-color: initial;\u0022\u003ELa Joconde est devenue un tableau éminemment célèbre car, depuis sa réalisation, nombre d\u0027artistes l\u0027ont prise comme référence. À l\u0027époque romantique, les artistes ont été fascinés par ce tableau et ont contribué à développer le mythe qui l\u0027entoure, en faisant de ce tableau l’une des œuvres d\u0027art les plus célèbres du monde, si ce n\u0027est la plus célèbre : elle est en tout cas considérée comme l\u0027une des représentations d\u0027un visage féminin les plus célèbres au monde. Au xxie siècle, elle est devenue l\u0027objet d\u0027art le plus visité au monde, juste devant le diamant Hope, avec 20 000 visiteurs qui viennent l\u0027admirer et la photographier quotidiennement.\u003C\/span\u003E\r\n\u003C\/p\u003E",
+            "player_type": 0,
+            "medias_roles": [
+                {
+                    "media_idx": 63510,
+                    "role": 14
+                },
+                {
+                    "media_idx": 63511,
+                    "role": 15
+                }
+            ],
+            "map_points": [
+                {
+                    "map_idx": 556,
+                    "title": "La Joconde",
+                    "map_x": 0.7475,
+                    "map_y": 0.4151
                 }
             ]
         }

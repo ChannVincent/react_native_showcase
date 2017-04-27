@@ -37,11 +37,9 @@ class TabIcon extends React.Component {
     render() {
         const { selected, title, iconPic } = this.props;
         return (
-          <View
-            style={ styles.iconStyle }
-          >
+          <View style={ styles.iconStyle }>
             { this.getIcon() }
-            <Text style={{ color: selected ? '#a65b62' : 'black', width: 60, textAlign: 'center' }}>{ title }</Text>
+            <Text style={{ color: selected ? '#a65b62' : 'black', width: 60, textAlign: 'center', fontSize: 10 }}>{ title }</Text>
           </View>
         );
     }
@@ -49,7 +47,7 @@ class TabIcon extends React.Component {
 
 const RouterComponent = () => {
     return (
-      <Router>
+      <Router navigationBarStyle={ styles.navBarStyle }>
         <Scene key="intro" initial>
           <Scene
             key="splash"
@@ -96,7 +94,15 @@ const styles = {
     marginBottom: 50
   },
   tabBarStyle: {
-    backgroundColor: '#eee'
+    backgroundColor: '#fff',
+    borderTopWidth: 2,
+    borderTopColor: '#a65b62'
+
+  },
+  navBarStyle: {
+    backgroundColor: '#fff',
+    borderBottomColor: '#a65b62',
+    borderBottomWidth: 2
   },
   iconStyle: {
     width: 40,

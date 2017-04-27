@@ -66,9 +66,9 @@ const styles = {
   titleStyle: {
     marginLeft: 20,
     marginTop: 20,
-    fontSize: 20,
-    fontWeight: '500',
-    color: "#777"
+    fontSize: 23,
+    fontWeight: '600',
+    color: "#a65b62"
   },
   subtitleStyle: {
     margin: 10,

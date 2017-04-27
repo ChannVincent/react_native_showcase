@@ -1,233 +1,256 @@
 {
     "schema_version": 3,
-    "idx": 1078,
-    "name": "Publication classique",
+    "idx": 1127,
+    "name": "  primaire",
     "tours": [
         {
-            "idx": 1679,
-            "title": "Parcours plan",
+            "idx": 1721,
+            "title": "Oeuvres du Louvre",
             "pois_idx": [
-                17922,
-                17923,
-                17924,
-                17925,
-                17926
+                18131,
+                18132,
+                18133,
+                18134,
+                18135
             ],
-            "map_idx": 531
+            "map_idx": 556
         }
     ],
     "pois": [
         {
-            "idx": 17922,
+            "idx": 18131,
             "cartel_number": "1",
-            "title": "ShortText",
-            "subtitle": "Sous titre",
-            "short_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur condimentum varius erat a interdum. Nulla eu malesuada lectus.",
-            "long_text": "\u003Cp\u003E\r\n\t\u003Cspan style=\u0022background-color: initial;\u0022\u003ELorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur condimentum varius erat a interdum. Nulla eu malesuada lectus. Quisque faucibus mi dui, ut tincidunt massa ornare at. Nullam varius, lectus iaculis tempor eleifend, justo lacus luctus ante, quis pellentesque arcu enim sit amet mauris. Integer finibus ante at euismod imperdiet. Proin non pretium arcu. Nam tempus accumsan egestas. Maecenas ornare nibh sed egestas placerat.\u003C\/span\u003E\r\n\u003C\/p\u003E",
-            "related_pois_idx": [
-                17923,
-                17924
-            ],
+            "title": "La Joconde",
+            "subtitle": "Leonardo Da Vinci",
+            "short_text": "La Joconde, ou Portrait de Mona Lisa, est un tableau de l\u0027artiste italien Léonard de Vinci, réalisé entre 1503 et 1506, qui représente un portrait mi-corps, probablement celui de la florentine Lisa Gherardini, épouse de Francesco del Giocondo. Acquise par François Ier, cette peinture à l\u0027huile sur panneau de bois de peuplier de 77 × 53 cm est exposée au musée du Louvre à Paris. La Joconde est l\u0027un des rares tableaux attribués de façon certaine à Léonard de Vinci.",
+            "long_text": "\u003Cp\u003E\r\n\t\u003Cspan style=\u0022background-color: initial;\u0022\u003ELa Joconde est devenue un tableau éminemment célèbre car, depuis sa réalisation, nombre d\u0027artistes l\u0027ont prise comme référence. À l\u0027époque romantique, les artistes ont été fascinés par ce tableau et ont contribué à développer le mythe qui l\u0027entoure, en faisant de ce tableau l’une des œuvres d\u0027art les plus célèbres du monde, si ce n\u0027est la plus célèbre : elle est en tout cas considérée comme l\u0027une des représentations d\u0027un visage féminin les plus célèbres au monde. Au xxie siècle, elle est devenue l\u0027objet d\u0027art le plus visité au monde, juste devant le diamant Hope, avec 20 000 visiteurs qui viennent l\u0027admirer et la photographier quotidiennement.\u003C\/span\u003E\r\n\u003C\/p\u003E",
             "player_type": 0,
             "medias_roles": [
                 {
-                    "media_idx": 62659,
-                    "role": 15
-                },
-                {
-                    "media_idx": 62660,
-                    "role": 25
-                },
-                {
-                    "media_idx": 62661,
-                    "role": 25
-                },
-                {
-                    "media_idx": 62662,
-                    "role": 25
-                },
-                {
-                    "media_idx": 62663,
-                    "role": 25
-                },
-                {
-                    "media_idx": 62659,
-                    "role": 25
-                }
-            ],
-            "map_points": [
-                {
-                    "map_idx": 531,
-                    "title": "ShortText",
-                    "map_x": 0.2617,
-                    "map_y": 0.6865
-                }
-            ]
-        },
-        {
-            "idx": 17923,
-            "cartel_number": "2",
-            "title": "FullScreen",
-            "subtitle": "Sous titre",
-            "long_text": "\u003Cp\u003E\r\n\t \u003Cspan style=\u0022background-color: initial;\u0022\u003ELorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur condimentum varius erat a interdum. Nulla eu malesuada lectus. Quisque faucibus mi dui, ut tincidunt massa ornare at. Nullam varius, lectus iaculis tempor eleifend, justo lacus luctus ante, quis pellentesque arcu enim sit amet mauris. Integer finibus ante at euismod imperdiet. Proin non pretium arcu. Nam tempus accumsan egestas. Maecenas ornare nibh sed egestas placerat.\u003C\/span\u003E\r\n\u003C\/p\u003E",
-            "player_type": 1,
-            "medias_roles": [
-                {
-                    "media_idx": 62660,
-                    "role": 15
-                }
-            ],
-            "map_points": [
-                {
-                    "map_idx": 531,
-                    "title": "FullScreen",
-                    "map_x": 0.85,
-                    "map_y": 0.3969
-                }
-            ]
-        },
-        {
-            "idx": 17924,
-            "cartel_number": "3",
-            "title": "LongText",
-            "short_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur condimentum varius erat a interdum. Nulla eu malesuada lectus. Quisque faucibus mi dui, ut tincidunt massa ornare at. Nullam varius, lectus iaculis tempor eleifend, justo lacus luctus ante, quis pellentesque arcu enim sit amet mauris. Integer finibus ante at euismod imperdiet. Proin non pretium arcu. Nam tempus accumsan egestas. Maecenas ornare nibh sed egestas placerat.\r\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur condimentum varius erat a interdum. Nulla eu malesuada lectus. Quisque faucibus mi dui, ut tincidunt massa ornare at. Nullam varius, lectus iaculis tempor eleifend, justo lacus luctus ante, quis pellentesque arcu enim sit amet mauris. Integer finibus ante at euismod imperdiet. Proin non pretium arcu. Nam tempus accumsan egestas. Maecenas ornare nibh sed egestas placerat.",
-            "long_text": "\u003Cp\u003E\r\n\t\u003Cspan style=\u0022background-color: initial;\u0022\u003ELorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur condimentum varius erat a interdum. Nulla eu malesuada lectus. Quisque faucibus mi dui, ut tincidunt massa ornare at. Nullam varius, lectus iaculis tempor eleifend, justo lacus luctus ante, quis pellentesque arcu enim sit amet mauris. Integer finibus ante at euismod imperdiet. Proin non pretium arcu. Nam tempus accumsan egestas. Maecenas ornare nibh sed egestas placerat.\u003C\/span\u003E\r\n\u003C\/p\u003E",
-            "player_type": 2,
-            "medias_roles": [
-                {
-                    "media_idx": 62661,
-                    "role": 15
-                }
-            ],
-            "map_points": [
-                {
-                    "map_idx": 531,
-                    "title": "LongText",
-                    "map_x": 0.515,
-                    "map_y": 0.1865
-                }
-            ]
-        },
-        {
-            "idx": 17925,
-            "cartel_number": "4",
-            "title": "WebView",
-            "short_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur condimentum varius erat a interdum. Nulla eu malesuada lectus. Quisque faucibus mi dui, ut tincidunt massa ornare at. Nullam varius, lectus iaculis tempor eleifend, justo lacus luctus ante, quis pellentesque arcu enim sit amet mauris. Integer finibus ante at euismod imperdiet. Proin non pretium arcu. Nam tempus accumsan egestas. Maecenas ornare nibh sed egestas placerat.",
-            "long_text": "\u003Cp\u003E\r\n\t \u003Cspan style=\u0022background-color: initial;\u0022\u003ELorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur condimentum varius erat a interdum. Nulla eu malesuada lectus. Quisque faucibus mi dui, ut tincidunt massa ornare at. Nullam varius, lectus iaculis tempor eleifend, justo lacus luctus ante, quis pellentesque arcu enim sit amet mauris. Integer finibus ante at euismod imperdiet. Proin non pretium arcu. Nam tempus accumsan egestas. Maecenas ornare nibh sed egestas placerat.\u003C\/span\u003E\r\n\u003C\/p\u003E",
-            "player_type": 3,
-            "medias_roles": [
-                {
-                    "media_idx": 62662,
+                    "media_idx": 63510,
                     "role": 14
                 },
                 {
-                    "media_idx": 62670,
+                    "media_idx": 63511,
                     "role": 15
                 }
             ],
             "map_points": [
                 {
-                    "map_idx": 531,
-                    "title": "WebView",
-                    "map_x": 0.6958,
-                    "map_y": 0.776
+                    "map_idx": 556,
+                    "title": "La Joconde",
+                    "map_x": 0.7475,
+                    "map_y": 0.4151
                 }
             ]
         },
         {
-            "idx": 17926,
+            "idx": 18132,
+            "cartel_number": "2",
+            "title": "La Victoire de Samothrace",
+            "subtitle": "Auteur inconnu",
+            "long_text": "\u003Cp\u003E\r\n\t \u003Cspan style=\u0022background-color: initial;\u0022\u003EL\u0027inscription de dédicace est perdue, et nous ne possédons aucun témoignage antique sur la statue. Celle-ci ne peut donc être datée qu\u0027en fonction de son style, et par conséquent nul ne sait quelle victoire historique serait commémorée par ce monument. Plusieurs hypothèses ont été proposées.\u003C\/span\u003E\r\n\u003C\/p\u003E\r\n\u003Cp\u003E\r\n\t On a d\u0027abord considéré que les monnaies de Démétrios Poliorcète représentaient le monument lui-même ; le roi l\u0027aurait édifié en commémoration de sa victoire navale. À ce stade, la statue est attribuée à un sculpteur de la fin du ive siècle av. J.-C. ou du début du iiie siècle av. J.-C., par exemple un élève de Scopas, qui a travaillé à Samothrace. Cependant, Samothrace est alors sous le contrôle de Lysimaque, ennemi de Démétrios : il paraît peu probable que ce dernier ait pu y dédier un monument. Une autre hypothèse fait de la statue une offrande votive d\u0027Antigone II Gonatas après sa victoire contre les Ptolémées à Cos, dans les années -250 On sait en effet qu\u0027Antigone consacre une statue à Délos : il aurait pu en consacrer une autre à Samothrace, sanctuaire traditionnellement sous protection des Antigonides.\r\n\u003C\/p\u003E\r\n\u003Cp\u003E\r\n\t L\u0027hypothèse le plus souvent retenue a été avancée en 1931 par un savant allemand. Il a rapproché de la base de la statue un petit fragment d\u0027inscription en marbre de Lartos, trouvé par Champoiseau en 1891 dans l\u0027édifice de la Victoire. Sur ce fragment est gravé la fin d\u0027un nom en grec ancien …Σ ΡΟΔΙΟΣ \/ …S RHODIOS », qui aurait pu être celui de Pythocritos de Rhodes, nom qui se retrouve sur plusieurs bases de statue en bronze à Rhodes, où ce sculpteur était actif entre -200 et -165. À cette époque, de nombreuses batailles navales opposant d\u0027un côté Philippe V, souverain de Macédoine, et Antiochos III, souverain d\u0027Antioche, à Eumène II, souverain de Pergame, allié aux Romains et aux Rhodiens de l\u0027autre. Ces derniers l\u0027emportent après les batailles de Sidé et de Myonnésos, toutes deux en -190. Le monument de la Victoire serait donc une dédicace aux Grands Dieux de Samothrace, consécutive à ces batailles. Cependant, l\u0027appartenance du fragment à la base de la Victoire est impossible, car la présence d\u0027une cuvette d\u0027encastrement de petite taille interdit d\u0027y voir autre chose qu\u0027une base de statuette. Le sculpteur Pythocritos de Rhodes n\u0027est donc pas l\u0027auteur de la Victoire de Samothrace.\r\n\u003C\/p\u003E\r\n\u003Cp\u003E\r\n\t Une autre hypothèse a été proposée par le professeur Jean Richer qui a fait observer que le Navire sur lequel la statue est placée représente la constellation du Navire Argo : la proue de navire et la statue avaient été volontairement placées en biais dans la Fontaine de la Victoire où l\u0027ensemble se dressait dans l\u0027antiquité, au sein de l\u0027important Sanctuaire des Grands Dieux de Samothrace, de telle sorte que la Victoire regardait dans la direction du nord : selon Jean Richer, cette direction montre le chemin qui conduit à la porte des dieux identifiée au mont Hémos, et fait ainsi allusion à une victoire toute spirituelle ; car, dans cette orientation, l\u0027élan et le regard de la statue aboutissaient exactement à l\u0027angle nord-est de l’Anaktoron, siège des Petits Mystères, où l\u0027on donnait l\u0027initiation. Cet angle était ainsi le plus sacré du bâtiment.\r\n\u003C\/p\u003E\r\n\u003Cp\u003E\r\n\t La base en forme de navire a sûrement été réalisée à Rhodes, où on a trouvé des représentations de bateaux, en particulier un fragment de base en forme de proue de navire, dédiée dans le temple d\u0027Athéna sur l\u0027acropole de Lindos de Rhodes. Elle est faite de trois assises superposées de blocs en marbre de Lartos. Il existait donc bien à Rhodes des ateliers spécialisés dans ce genre de travail. Mais on ne trouve pas dans cette île de statue comparable en virtuosité à celle de la Victoire, qui a certainement été sculptée par un artiste venu d\u0027ailleurs. C\u0027est pourquoi la Victoire a pu être comparée à des personnages de la frise du Grand Autel de Pergame (vers -180--160). Cette frise en très haut relief représente une Gigantomachie, c\u0027est-à-dire le combat des dieux grecs contre les Géants monstrueux. Le dessin des ailes déployées des Géants, les attitudes énergiques et les draperies mouvementées des déesses ressemblent beaucoup à la statue de la Victoire. Il a même été suggéré que les deux œuvres auraient pu être créées par un même artiste.\r\n\u003C\/p\u003E",
+            "player_type": 1,
+            "medias_roles": [
+                {
+                    "media_idx": 63512,
+                    "role": 14
+                },
+                {
+                    "media_idx": 63513,
+                    "role": 15
+                }
+            ],
+            "map_points": [
+                {
+                    "map_idx": 556,
+                    "title": "La Victoire de Samothrace",
+                    "map_x": 0.6858,
+                    "map_y": 0.3541
+                }
+            ]
+        },
+        {
+            "idx": 18133,
+            "cartel_number": "3",
+            "title": "La Vénus de Milo",
+            "subtitle": "Alexandros d\u0027Antioche",
+            "short_text": "La Vénus de Milo est une célèbre sculpture grecque de la fin de l\u0027époque hellénistique (vers 130-100 av. J.-C.) qui pourrait représenter la déesse Aphrodite (Vénus dans la mythologie romaine). Découverte en 1820 sur l\u0027île de Milos (Milo étant une forme ancienne du nom de cette île), d\u0027où son nom, elle est actuellement conservée au musée du Louvre, à Paris.",
+            "long_text": "\u003Cp\u003E\r\n\tLe buste de la statue est mis au jour le 8 avril 1820 à Milos, une île de la mer Égée, faisant alors partie de l\u0027Empire ottoman, par un paysan nommé Yorgos Kentrotas à la recherche de pierres pour bâtir un mur autour de son champ. Par hasard, un élève officier de marine français, Olivier Voutier, assiste à la découverte. Passionné par l\u0027archéologie, alors une discipline récente, il incite le paysan à continuer de creuser. Apparaissent alors la partie inférieure de la statue et quelques fragments appartenant de toute évidence à la statue, comme le nœud du chignon. En l\u0027état, le buste n\u0027a déjà plus ses bras, comme en témoigne le dessin exécuté sur place par Voutier. Celui-ci prévient Louis Brest, vice-consul de France à Milo, pendant que le paysan, poursuivant sur sa lancée, met au jour d’autres fragments, dont deux piliers hermaïques, deux blocs inscrits, qui seront ensuite rejoints par un troisième, une main mutilée tenant une grenade (considérée par le vicomte de Marcellus comme d’un travail trop rudimentaire pour appartenir à la statue) et des morceaux de bras.\r\n\u003C\/p\u003E\r\n\u003Cp\u003E\r\n\tVoutier fait alors pression sur le consul pour que l\u0027État français achète la statue. De son côté, Jules Dumont d\u0027Urville, alors enseigne du vaisseau La Chevrette, dirigé par le capitaine et hydrographe Pierre-Henry Gauttier du Parc, a également vu la statue et alerte le marquis de Rivière, ambassadeur de France auprès de la Sublime Porte. Celui-ci dépêche sur place un secrétaire d\u0027ambassade, le comte de Marcellus, qui arrive en rade de Milo au moment où la statue est en train d\u0027embarquer sur un navire à destination de Constantinople pour le compte d\u0027un haut dignitaire turc, le drogman de l\u0027arsenal, Nicolas Marousi.\r\n\u003C\/p\u003E\r\n\u003Cp\u003E\r\n\tAu terme de tractations diverses, la statue est achetée en septembre 1820 pour le compte du marquis de Rivière, et ramenée en France en pleine propriété. Durant son voyage, la statue fera un étape au Château d\u0027Audour, à Dompierre-les-Ormes dans la propriété du comte de Marcellus.\r\n\u003C\/p\u003E\r\n\u003Cp\u003E\r\n\tUn moulage en plâtre de la statue, présentée comme \u0022la troisième reproduction de la vraie sculpture\u0022 grecque, offert par Louis XVIII au comte de Marcellus en 1822 pour le remercier d\u0027avoir assuré son transport en France est conservée, sur un socle gravé des mots Venus Victrix dans une salle au décor néo-classique du château Marcellus vers Marmande (47), qui est mis en vente pas ses trois co-propriétaires (reprod. coul. dans \u0022Sud-Ouest Mag\u0022 n°213 - 30\/04\/2016, p.22).\r\n\u003C\/p\u003E\r\n\u003Cp\u003E\r\n\tLe marquis de Rivière la fera offrir au roi Louis XVIII le 1er mars 1821, qui en fait aussitôt don au musée du Louvre. Comme toute œuvre endommagée, la Vénus entre dans l\u0027atelier de restauration du musée afin de subir l\u0027examen minutieux de son restaurateur en chef Bernard Lange. La rigueur d’analyse de ce dernier le conduit à écarter de ses projets de restauration toute conception fantaisiste. Il pense ainsi retrouver le mouvement initial de bras de la Vénus et envisage de recréer les parties manquantes selon les préceptes de restauration en vigueur à cette époque. Contre toute attente, mais avec l’appui du roi, il est finalement décidé de la présenter dans l\u0027état où elle a été trouvée, sans ajout ou complément[réf. nécessaire]. Les seules restaurations sont celles de l\u0027extrémité du nez, de la lèvre inférieure, du gros orteil du pied droit et de quelques raccords dans l\u0027épaisseur de la draperie.\r\n\u003C\/p\u003E\r\n\u003Cp\u003E\r\n\t\u003Cspan style=\u0022background-color: initial;\u0022\u003EUne polémique éclate dans les années 1890, quand une nouvelle tentative de restauration est entreprise : l\u0027autorité muséale confie à A. Miranoff, professeur à l\u0027Université de Moscou le soin de proposer un projet (cf. ci-contre). Il signale entre autres que deux cavités se trouvent présentes au niveau du dos de la déesse et suggère qu\u0027elles étaient présentes au moment de la découverte.\u003C\/span\u003E\r\n\u003C\/p\u003E",
+            "player_type": 2,
+            "medias_roles": [
+                {
+                    "media_idx": 63514,
+                    "role": 14
+                },
+                {
+                    "media_idx": 63515,
+                    "role": 15
+                }
+            ],
+            "map_points": [
+                {
+                    "map_idx": 556,
+                    "title": "La Vénus de Milo",
+                    "map_x": 0.8317,
+                    "map_y": 0.3628
+                }
+            ]
+        },
+        {
+            "idx": 18134,
+            "cartel_number": "4",
+            "title": "La Liberté guidant le peuple",
+            "subtitle": "Eugène Delacroix",
+            "short_text": "La Liberté guidant le peuple est une huile sur toile d\u0027Eugène Delacroix réalisée en 1830, inspirée de la révolution des Trois Glorieuses qui s\u0027est passée en 1830. Présentée au public au Salon de Paris de 1831 sous le titre Scènes de barricades, l\u0027œuvre est ensuite exposée au musée du Luxembourg à partir de 1863 puis transférée au musée du Louvre en 1874 où elle fut l\u0027une des œuvres les plus fréquentées. L\u0027œuvre a été présentée dans l\u0027exposition La Galerie du temps au Louvre-Lens.\r\n\r\nPar son aspect allégorique et sa portée politique, elle a été fréquemment choisie comme symbole de la République française ou de la démocratie.",
+            "long_text": "\u003Cp\u003E\r\n\t \u003Cspan style=\u0022background-color: initial;\u0022\u003EL\u0027œuvre assez imposante fut réalisée entre les mois d\u0027octobre et de décembre 1830. La scène se passe à Paris, comme l\u0027indiquent les tours de la cathédrale Notre-Dame qui émergent des fumées au dernier plan. Une foule d\u0027émeutiers franchissent une barricade. Au premier plan, associés aux matériaux–- pavés et poutres – que forment cette barricade, les corps de soldats morts apparaissent tordus et comme désarticulés. L\u0027un gît nu. Un ouvrier ou un paysan blessé, foulard noué sur la tête, émerge des décombres, le corps et le regard tendus vers une femme du peuple, coiffée d\u0027un bonnet phrygien dont s\u0027échappent des boucles. Celle-ci est représentée en pied et occupe de fait la place principale. Elle brandit par la hampe un drapeau tricolore qui occupe l\u0027axe médian de la toile. Sa poitrine est en partie découverte. On distingue quatre autres personnages aux abords de la barricade : deux enfants des rues – l\u0027un coiffé d\u0027un béret brandissant des pistolets de cavalerie, la bouche ouverte sur un cri, l\u0027autre coiffé d\u0027un bonnet de police s\u0027agrippant au pavé – un homme coiffé d\u0027un haut-de-forme (qui laisse penser que c\u0027est un bourgeois) mais portant le pantalon et la ceinture des ouvriers, les genoux sur la barricade, et un ouvrier portant un béret, un sabre briquet à la main et sa banderole sur l\u0027épaule. Derrière, on peut voir un élève de l\u0027École polytechnique portant le traditionnel bicorne. Les principaux protagonistes s\u0027inscrivent dans un triangle dont le sommet est le drapeau. Les couleurs dominantes sont le bleu, le blanc et le rouge qui émergent des teintes grises et marron. La lumière semble provenir de l\u0027arrière-plan et la femme s\u0027avance vers nous en contre-jour.\u003C\/span\u003E\r\n\u003C\/p\u003E\r\n\u003Cp\u003E\r\n\t Les couleurs chaudes dominent les corps des émeutiers.\r\n\u003C\/p\u003E",
+            "player_type": 3,
+            "medias_roles": [
+                {
+                    "media_idx": 63520,
+                    "role": 14
+                },
+                {
+                    "media_idx": 63553,
+                    "role": 15
+                }
+            ],
+            "map_points": [
+                {
+                    "map_idx": 556,
+                    "title": "La Liberté guidant le peuple",
+                    "map_x": 0.7542,
+                    "map_y": 0.5675
+                }
+            ]
+        },
+        {
+            "idx": 18135,
             "cartel_number": "5",
-            "title": "FatherSon",
-            "short_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur condimentum varius erat a interdum. Nulla eu malesuada lectus. Quisque faucibus mi dui, ut tincidunt massa ornare at. Nullam varius, lectus iaculis tempor eleifend, justo lacus luctus ante, quis pellentesque arcu enim sit amet mauris. Integer finibus ante at euismod imperdiet. Proin non pretium arcu. Nam tempus accumsan egestas. Maecenas ornare nibh sed egestas placerat.",
-            "long_text": "\u003Cp\u003E\r\n\t\u003Cspan style=\u0022background-color: initial;\u0022\u003ELorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur condimentum varius erat a interdum. Nulla eu malesuada lectus. Quisque faucibus mi dui, ut tincidunt massa ornare at. Nullam varius, lectus iaculis tempor eleifend, justo lacus luctus ante, quis pellentesque arcu enim sit amet mauris. Integer finibus ante at euismod imperdiet. Proin non pretium arcu. Nam tempus accumsan egestas. Maecenas ornare nibh sed egestas placerat.\u003C\/span\u003E\r\n\u003C\/p\u003E",
+            "title": "Le Radeau de a Méduse",
+            "subtitle": "Théodore Géricault",
+            "short_text": "Le Radeau de La Méduse est une peinture à l\u0027huile sur toile, réalisée entre 1818 et 1819 par le peintre et lithographe romantique français Théodore Géricault (1791-1824). Son titre initial, donné par Géricault lors de sa première présentation, est Scène d\u0027un naufrage. Ce tableau, de très grande dimension (491 cm de hauteur et 716 cm de largeur), représente un épisode tragique de l\u0027histoire de la marine française : le naufrage de la frégate Méduse, qui s\u0027échoue sur un banc de sable au large des côtes de l\u0027actuelle Mauritanie, le 2 juillet 1816. Au moins 147 personnes se maintiennent à la surface de l\u0027eau sur un radeau de fortune et seuls quinze embarquent le 17 juillet à bord de L’Argus, un bateau venu les secourir. Cinq personnes meurent peu après leur arrivée à Saint-Louis du Sénégal, après avoir enduré la faim, la déshydratation, la folie et même le cannibalisme. L’événement devient un scandale d\u0027ampleur internationale, en partie car un capitaine français servant la monarchie restaurée depuis peu est jugé responsable du désastre, en raison de son incompétence.",
+            "long_text": "\u003Cp\u003E\r\n\t\u003Cspan style=\u0022background-color: initial;\u0022\u003ELe Radeau de La Méduse présente une certaine continuité avec les courants picturaux antérieurs au romantisme, notamment dans le choix du sujet et le caractère dramatique de la représentation, mais rompt de manière nette avec l\u0027ordre et la quiétude de la peinture néoclassique. En choisissant de représenter cet épisode tragique pour sa première œuvre d\u0027importance, Géricault a conscience que le caractère récent du naufrage suscitera l\u0027intérêt du public et lui permettra de lancer sa jeune carrière. Cependant, l\u0027artiste s\u0027est également pris de fascination pour cet événement, et réalise ainsi d\u0027abondantes recherches préparatoires et plusieurs esquisses avant d\u0027entamer la création du tableau. Il rencontre en effet deux des survivants de la catastrophe, construit un modèle réduit très détaillé de la structure du radeau, et se rend même dans des morgues et des hôpitaux afin de voir de ses propres yeux la couleur et la texture de la peau des mourants.\u003C\/span\u003E\r\n\u003C\/p\u003E\r\n\u003Cp\u003E\r\n\tAinsi que Géricault le pressent, le tableau provoque la controverse lors de sa première présentation à Paris, au salon de 1819 : certains s\u0027en font les ardents défenseurs, tandis que d\u0027autres le fustigent immédiatement. Peu après, l’œuvre est exposée à Londres, ce qui achève d\u0027établir la réputation du jeune peintre en Europe. Aujourd\u0027hui, elle compte parmi les œuvres les plus admirées du romantisme français, et son influence est perceptible dans les créations de peintres tels que Joseph William Turner, Eugène Delacroix, Gustave Courbet ou encore Édouard Manet. Le tableau, qui souffre d\u0027un assombrissement irréversible dû à un apprêt au bitume de Judée ou à une huile rendue trop siccative par un ajout abondant d\u0027oxyde de plomb et de cire, est conservé au musée du Louvre, qui l\u0027achète à un ami de l\u0027artiste peu après sa mort en 1824.\r\n\u003C\/p\u003E",
             "related_pois_idx": [
-                17922,
-                17923,
-                17924,
-                17925
+                18134
             ],
             "player_type": 4,
             "medias_roles": [
                 {
-                    "media_idx": 62663,
+                    "media_idx": 63522,
+                    "role": 14
+                },
+                {
+                    "media_idx": 63523,
                     "role": 15
                 }
             ],
             "map_points": [
                 {
-                    "map_idx": 531,
-                    "title": "FatherSon",
-                    "map_x": 0.1883,
-                    "map_y": 0.2313
+                    "map_idx": 556,
+                    "title": "Le Radeau de a Méduse",
+                    "map_x": 0.8675,
+                    "map_y": 0.6676
                 }
             ]
         }
     ],
     "maps": [
         {
-            "idx": 531,
-            "title": "Plan",
+            "idx": 556,
+            "title": "Oeuvres du Louvre",
             "geo_localized": false,
             "media_role": {
-                "media_idx": 62664,
+                "media_idx": 63508,
                 "role": 18
             }
         }
     ],
     "medias": [
         {
-            "idx": 62659,
-            "media_category": 1,
-            "no_zoom": false,
-            "full_width": 1520,
-            "full_height": 855,
-            "filename": "media62659"
-        },
-        {
-            "idx": 62660,
-            "media_category": 1,
-            "no_zoom": true,
-            "full_width": 1920,
-            "full_height": 1080,
-            "filename": "media62660"
-        },
-        {
-            "idx": 62661,
-            "media_category": 1,
-            "summary": "\u003Ch2\u003EImage avec \u003C\/h2\u003E\r\n\u003Cp style=\u0022margin-left: 20px;\u0022\u003E\r\n\t descirption et mise en forme\r\n\u003C\/p\u003E\r\n\u003Col\u003E\r\n\t\u003Cli\u003Etest\u003C\/li\u003E\r\n\t\u003Cli\u003E\u003Cstrong\u003Etest gras\u003C\/strong\u003E\u003C\/li\u003E\r\n\t\u003Cli\u003E\u003Cstrong\u003E\u003Cem\u003Etest italique\u003C\/em\u003E\u003C\/strong\u003E\u003C\/li\u003E\r\n\u003C\/ol\u003E",
-            "no_zoom": false,
-            "full_width": 2560,
-            "full_height": 1440,
-            "filename": "media62661"
-        },
-        {
-            "idx": 62662,
+            "idx": 63510,
             "media_category": 1,
             "no_zoom": false,
             "full_width": 640,
-            "full_height": 960,
-            "filename": "media62662"
+            "full_height": 480,
+            "filename": "media63510"
         },
         {
-            "idx": 62663,
+            "idx": 63511,
+            "media_category": 1,
+            "no_zoom": false,
+            "full_width": 743,
+            "full_height": 1155,
+            "filename": "media63511"
+        },
+        {
+            "idx": 63512,
+            "media_category": 1,
+            "no_zoom": false,
+            "full_width": 620,
+            "full_height": 414,
+            "filename": "media63512"
+        },
+        {
+            "idx": 63513,
+            "media_category": 1,
+            "no_zoom": false,
+            "full_width": 1340,
+            "full_height": 1358,
+            "filename": "media63513"
+        },
+        {
+            "idx": 63514,
+            "media_category": 1,
+            "no_zoom": false,
+            "full_width": 911,
+            "full_height": 564,
+            "filename": "media63514"
+        },
+        {
+            "idx": 63515,
+            "media_category": 1,
+            "no_zoom": false,
+            "full_width": 640,
+            "full_height": 480,
+            "filename": "media63515"
+        },
+        {
+            "idx": 63520,
             "media_category": 1,
             "no_zoom": false,
             "full_width": 1600,
-            "full_height": 1200,
-            "filename": "media62663"
+            "full_height": 1065,
+            "filename": "media63520"
         },
         {
-            "idx": 62670,
+            "idx": 63553,
             "media_category": 9,
-            "filename": "media62670"
+            "filename": "media63553"
         },
         {
-            "idx": 62664,
+            "idx": 63522,
             "media_category": 1,
             "no_zoom": false,
-            "full_width": 1002,
-            "full_height": 802,
-            "filename": "media62664"
+            "full_width": 260,
+            "full_height": 177,
+            "filename": "media63522"
+        },
+        {
+            "idx": 63523,
+            "media_category": 1,
+            "no_zoom": false,
+            "full_width": 1200,
+            "full_height": 819,
+            "filename": "media63523"
+        },
+        {
+            "idx": 63508,
+            "media_category": 1,
+            "no_zoom": false,
+            "full_width": 4323,
+            "full_height": 2483,
+            "filename": "media63508"
         }
     ]
 }

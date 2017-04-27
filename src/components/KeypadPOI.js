@@ -65,6 +65,54 @@ class KeypadPOI extends Component {
     return null;
   }
 
+  renderDeleteButton() {
+    if (this.state.currentCartelNumber == '') {
+      return (
+        <KeypadButton
+          onPress={ () => { this.onDeleteClick() } }
+          textStyle={{ color: '#777' }}
+          disabled>
+          Delete
+        </KeypadButton>
+      )
+    }
+    else {
+      return (
+        <KeypadButton
+          onPress={ () => { this.onDeleteClick() } }
+          textStyle={{ color: '#fff' }}
+          buttonStyle={{ backgroundColor: '#ff0000' }}>
+          Delete
+        </KeypadButton>
+      )
+    }
+  }
+
+  renderOkButton() {
+    console.log(this.state.currentCartelNumber);
+    var poi = this.getPOIFromCartel(this.state.currentCartelNumber);
+    if (poi == null) {
+      return (
+        <KeypadButton
+          textStyle={{ color: '#777' }}
+          onPress={ () => { this.onValidateClick() } }
+          disabled>
+          Ok
+        </KeypadButton>
+      )
+    }
+    else {
+      return (
+        <KeypadButton
+          onPress={ () => { this.onValidateClick() } }
+          textStyle={{ color: '#fff' }}
+          buttonStyle={{ backgroundColor: '#1ecc2a' }}>
+          Ok
+        </KeypadButton>
+      )
+    }
+  }
+
   render() {
     return (
       <View style={ styles.containerStyle }>
@@ -88,9 +136,9 @@ class KeypadPOI extends Component {
           <KeypadButton onPress={ () => { this.onNumberClick(9) } }>9</KeypadButton>
         </View>
         <View style={ styles.lineContainerStyle }>
-          <KeypadButton onPress={ () => { this.onDeleteClick() } }>Delete</KeypadButton>
+          {this.renderDeleteButton()}
           <KeypadButton onPress={ () => { this.onNumberClick(0) } }>0</KeypadButton>
-          <KeypadButton onPress={ () => { this.onValidateClick() } }>Ok</KeypadButton>
+          {this.renderOkButton()}
         </View>
       </View>
     )

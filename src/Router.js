@@ -1,6 +1,6 @@
 import React from 'react';
 import { Scene, Router } from 'react-native-router-flux';
-import { Platform, Text } from 'react-native';
+import { Platform, Text, Image, View } from 'react-native';
 import ListPOI from './components/ListPOI';
 import KeypadPOI from './components/KeypadPOI';
 import WebViewScreen from './components/WebViewScreen';
@@ -8,10 +8,41 @@ import POIView from './components/POIView';
 import SplashScreen from './components/SplashScreen';
 
 class TabIcon extends React.Component {
-    render() {
-        const { selected, title } = this.props;
+    getIcon() {
+      const { selected, title, iconPic } = this.props;
+      switch(title) {
+        case 'Liste':
+          return (
+            <Image
+              style={{tintColor: selected ? '#a65b62' : 'black', width: 25, height: 25}}
+              source={ require('../assets/icon_tab2.png') }
+            />
+          );
+        case 'Clavier':
+          return (
+            <Image
+              style={{tintColor: selected ? '#a65b62' : 'black', width: 25, height: 25}}
+              source={ require('../assets/icon_tab4.png') }
+            />
+          );
+        case 'WebView':
         return (
-            <Text style={{ color: selected ? 'red' : 'black' }}>{ title }</Text>
+          <Image
+            style={{tintColor: selected ? '#a65b62' : 'black', width: 25, height: 25}}
+            source={ require('../assets/icon_tab1.png') }
+          />
+        );
+      }
+    }
+    render() {
+        const { selected, title, iconPic } = this.props;
+        return (
+          <View
+            style={ styles.iconStyle }
+          >
+            { this.getIcon() }
+            <Text style={{ color: selected ? '#a65b62' : 'black', width: 60, textAlign: 'center' }}>{ title }</Text>
+          </View>
         );
     }
 }
@@ -66,6 +97,13 @@ const styles = {
   },
   tabBarStyle: {
     backgroundColor: '#eee'
+  },
+  iconStyle: {
+    width: 40,
+    height: 40,
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center'
   }
 }
 

@@ -21,7 +21,7 @@ class SplashScreen extends Component {
       <TouchableWithoutFeedback onPress={ this.startMain }>
         <View style={ styles.containerStyle }>
           <Image
-            resizeMode='contain'
+            resizeMode='cover'
             style={ styles.imageStyle }
             source={ require('../../assets/launch_image.png') }
           />

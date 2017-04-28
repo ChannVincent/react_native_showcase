@@ -27,9 +27,11 @@ Run on Android :
 - To run your emulators : /Users/vincentchann/Library/Android/sdk/tools/emulator -avd Nexus_5_API_23 -netdelay none -netspeed full
 
 Generate release APK :
-- react-native run-android --configuration=release
+- https://facebook.github.io/react-native/docs/signed-apk-android.html
+- cd android && ./gradlew assembleRelease
 
 Generate release IPA :
+- https://medium.com/react-native-development/deploying-a-react-native-app-for-ios-pt-1-a79dfd15acb8
 - generate JS bundle : react-native bundle --entry-file index.ios.js --platform ios --dev false --bundle-output ios/main.jsbundle --assets-dest ios
 - open react-native showcase with XCode
 - import & choose the right certificate

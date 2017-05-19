@@ -4,6 +4,11 @@ import Slider from 'react-native-slider';
 import Video from 'react-native-video';
 const { width, height } = Dimensions.get('window');
 
+/*
+https://github.com/devnacho/react-native-music-player/blob/master/app/components/player/Player.js
+https://github.com/react-native-community/react-native-video
+https://github.com/jeanregisser/react-native-slider
+*/
 class AudioPlayer extends Component {
 
   state = {

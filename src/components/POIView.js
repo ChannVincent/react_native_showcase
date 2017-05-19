@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { View, Text, Image, Dimensions, ScrollView } from 'react-native';
+import AudioPlayer from './AudioPlayer';
 import { connect } from 'react-redux';
 import { Actions } from 'react-native-router-flux';
 import {  } from '../actions';
@@ -36,6 +37,7 @@ class POIView extends Component {
             source={{ uri: (this.getMainImageMedia() != undefined) ? this.getMainImageMedia().filename + "_l" : "image_not_found" }}
             style={ styles.imageStyle }
           />
+          <AudioPlayer />
           <Text style={ styles.titleStyle }>
             { this.props.currentPOI.title }
           </Text>

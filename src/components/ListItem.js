@@ -12,9 +12,7 @@ class ListItem extends Component {
             <Text style={ styles.titleStyle }>{ title }</Text>
           </CardSection>
 
-          <CardSection
-            style={ styles.cardStyle }
-          >
+          <CardSection style={ styles.cardStyle }>
             <View style={ styles.imageContainerStyle }>
               <Image
                 style={ styles.imageStyle }

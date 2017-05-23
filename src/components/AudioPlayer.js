@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { View, Text, Dimensions } from 'react-native';
 import Slider from 'react-native-slider';
 import Video from 'react-native-video';
+import { PlayPauseButton } from './common';
 const { width, height } = Dimensions.get('window');
 
 /*
@@ -12,7 +13,7 @@ https://github.com/jeanregisser/react-native-slider
 class AudioPlayer extends Component {
 
   state = {
-    playing: true,
+    playing: false,
     muted: false,
     sliding: false,
     currentTime: 0
@@ -77,7 +78,8 @@ class AudioPlayer extends Component {
     }
 
     return (
-      <View>
+      <View style={ styles.containerStyle }>
+
         <Video
           source={ require('../../assets/media63100.m4a') }
           ref="audio"
@@ -91,28 +93,46 @@ class AudioPlayer extends Component {
           repeat={ false }
           playInBackground={ true }
         />
-        <View style={ styles.sliderContainer }>
+
+        <PlayPauseButton
+          onPressPlay={ () => { console.log('onPressPlay') } }
+          onPressPause={ () => { console.log('onPressPause') } }
+        />
+
+        <View style={ styles.sliderContainerStyle }>
           <Slider
             onSlidingStart={ this.onSlidingStart.bind(this) }
             onSlidingComplete={ this.onSlidingComplete.bind(this) }
             onValueChange={ this.onSlidingChange.bind(this) }
-            minimumTrackTintColor='#851c44'
+            minimumTrackTintColor='#fff'
             style={ styles.slider }
             trackStyle={ styles.sliderTrack }
             thumbStyle={ styles.sliderThumb }
             value={ songPercentage }
           />
         </View>
+
+        <Text>
+
+        </Text>
       </View>
     )
   }
 }
 
 const styles = {
-  sliderContainer: {
-    margin: 5,
-    backgroundColor: '#eee',
+  containerStyle: {
+    backgroundColor: '#a65b62',
+    flexDirection: 'row',
   },
+  sliderContainerStyle: {
+    margin: 5,
+    flexDirection: 'column',
+    height: 20,
+    flex: 1,
+    alignSelf: 'center'
+  },
+
   timeInfo: {
     flexDirection: 'row',
   },
@@ -138,12 +158,13 @@ const styles = {
     top: 11,
     width: 14,
     height: 14,
-    backgroundColor: '#f62976',
+    backgroundColor: '#fff',
     borderRadius: 7,
-    shadowColor: 'red',
+    shadowColor: '#fff',
     shadowOffset: { width: 0, height: 0 },
     shadowRadius: 2,
     shadowOpacity: 1,
   }
 }
+
 export default AudioPlayer;

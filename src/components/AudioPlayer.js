@@ -22,8 +22,18 @@ class AudioPlayer extends Component {
   /*
   Player Audio
   */
-  togglePlay() {
-    this.setState({ playing: !this.state.playing });
+  onPlay() {
+    console.log('play');
+    this.setState({
+      playing: true
+    });
+  }
+
+  onPause() {
+    console.log('pause');
+    this.setState({
+      playing: false
+    });
   }
 
   toggleVolume() {
@@ -31,19 +41,16 @@ class AudioPlayer extends Component {
   }
 
   setTime(params) {
-    console.log('setTime - currentTime : ' + params.currentTime);
     if(!this.state.sliding) {
       this.setState({ currentTime: params.currentTime });
     }
   }
 
   onLoad(params) {
-    console.log('onLoad - duration : ' + params.duration);
     this.setState({ songDuration: params.duration });
   }
 
   onEnd() {
-    console.log('onEnd');
     this.setState({ playing: false });
   }
 
@@ -95,8 +102,8 @@ class AudioPlayer extends Component {
         />
 
         <PlayPauseButton
-          onPressPlay={ () => { console.log('onPressPlay') } }
-          onPressPause={ () => { console.log('onPressPause') } }
+          onPressPlay={ this.onPlay.bind(this) }
+          onPressPause={ this.onPause.bind(this) }
         />
 
         <View style={ styles.sliderContainerStyle }>
@@ -112,9 +119,6 @@ class AudioPlayer extends Component {
           />
         </View>
 
-        <Text>
-
-        </Text>
       </View>
     )
   }

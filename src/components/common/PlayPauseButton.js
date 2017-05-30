@@ -8,7 +8,6 @@ class PlayPauseButton extends Component {
   }
 
   renderImage() {
-    console.log(this.props);
     switch (this.state.play) {
       case 0:
         return (
@@ -38,10 +37,12 @@ class PlayPauseButton extends Component {
     switch (this.state.play) {
       case 0:
         this.setState({ play: 1 });
+        this.props.onPressPlay();
         break;
 
       case 1:
         this.setState({ play: 0 });
+        this.props.onPressPause();
         break;
 
       default:
@@ -67,8 +68,9 @@ const styles = {
     backgroundColor: '#ccc'
   },
   imageStyle: {
-    width: 40,
-    height: 40,
+    width: 30,
+    height: 30,
+    margin: 5,
   },
 }
 

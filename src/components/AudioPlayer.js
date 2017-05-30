@@ -100,7 +100,7 @@ class AudioPlayer extends Component {
       <View style={ styles.containerStyle }>
 
         <Video
-          source={ require('../../assets/media63100.m4a') }
+          source={ ((this.props.source === undefined) ? require('../../assets/media63102.m4a') : this.props.source) }
           ref="audio"
           volume={ this.state.muted ? 0 : 1.0 }
           muted={ false }

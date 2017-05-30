@@ -37,7 +37,7 @@ class POIView extends Component {
             source={{ uri: (this.getMainImageMedia() != undefined) ? this.getMainImageMedia().filename + "_l" : "image_not_found" }}
             style={ styles.imageStyle }
           />
-          <AudioPlayer />
+          <AudioPlayer source={ require('../../assets/media63100.m4a') }/>
           <Text style={ styles.titleStyle }>
             { this.props.currentPOI.title }
           </Text>

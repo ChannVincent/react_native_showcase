@@ -4,6 +4,7 @@ import Slider from 'react-native-slider';
 import Video from 'react-native-video';
 import { PlayPauseButton } from './common';
 const { width, height } = Dimensions.get('window');
+import moment from 'moment';
 
 /*
 https://github.com/devnacho/react-native-music-player/blob/master/app/components/player/Player.js
@@ -36,10 +37,6 @@ class AudioPlayer extends Component {
     });
   }
 
-  toggleVolume() {
-    this.setState({ muted: !this.state.muted });
-  }
-
   setTime(params) {
     if(!this.state.sliding) {
       this.setState({ currentTime: params.currentTime });
@@ -69,6 +66,21 @@ class AudioPlayer extends Component {
   onSlidingComplete() {
     this.refs.audio.seek( this.state.currentTime );
     this.setState({ sliding: false });
+  }
+
+  /*
+  Timer
+  */
+  getDisplayTime() {
+    if (this.state.songDuration !== undefined) {
+      return (
+          <Text style={ styles.timerStyle }>
+            { moment([0, 0, 1, 0, Math.round(this.state.currentTime) / 60, Math.round(this.state.currentTime) % 60]).format('mm:ss') }
+            /
+            { moment([0, 0, 1, 0, Math.round(this.state.songDuration) / 60, Math.round(this.state.songDuration) % 60]).format('mm:ss') }
+          </Text>
+      )
+    }
   }
 
   /*
@@ -119,6 +131,9 @@ class AudioPlayer extends Component {
           />
         </View>
 
+        <View style={ styles.timerContainerStyle }>
+          { this.getDisplayTime() }
+        </View>
       </View>
     )
   }
@@ -137,20 +152,20 @@ const styles = {
     alignSelf: 'center'
   },
 
-  timeInfo: {
-    flexDirection: 'row',
+  timerContainerStyle: {
+    height: 20,
+    width: 80,
+    alignItems: 'center',
+    marginTop: 12
+
   },
-  time: {
-    color: '#FFF',
-    flex: 1,
-    fontSize: 10,
-  },
-  timeRight: {
+  timerStyle: {
     color: '#FFF',
     textAlign: 'right',
     flex: 1,
-    fontSize: 10,
+    fontSize: 12,
   },
+
   slider: {
     height: 20,
   },

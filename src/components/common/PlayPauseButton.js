@@ -37,12 +37,16 @@ class PlayPauseButton extends Component {
     switch (this.state.play) {
       case 0:
         this.setState({ play: 1 });
-        this.props.onPressPlay();
+        if (this.props.onPressPlay !== undefined) {
+          this.props.onPressPlay();
+        }
         break;
 
       case 1:
         this.setState({ play: 0 });
-        this.props.onPressPause();
+        if (this.props.onPressPause !== undefined) {
+          this.props.onPressPause();
+        }
         break;
 
       default:

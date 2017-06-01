@@ -11,7 +11,7 @@
     "lodash": "^4.17.4",
     "moment": "^2.18.1",
     "react": "16.0.0-alpha.6",
-    "react-native": "0.43",
+    "react-native": "0.44",
     "react-native-router-flux": "3.38.0",
     "react-native-slider": "^0.9.1",
     "react-native-video": "^1.0.0",

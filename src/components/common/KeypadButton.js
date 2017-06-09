@@ -1,24 +1,36 @@
 import React from 'react';
-import { Text, TouchableOpacity, Platform } from 'react-native';
+import { Text, TouchableOpacity, Platform, Image } from 'react-native';
 
 const KeypadButton = ({ onPress, children, buttonStyle, textStyle, disabled=false }) => {
 
   const { mainButtonStyle, mainTextStyle } = styles;
 
-  return (
-    <TouchableOpacity onPress={onPress} style={[mainButtonStyle, buttonStyle]} disabled={disabled}>
-      <Text style={[mainTextStyle, textStyle]}>
-        {children}
-      </Text>
-    </TouchableOpacity>
-  );
+  if (children !== 'Delete') {
+    return (
+      <TouchableOpacity onPress={onPress} style={[mainButtonStyle, buttonStyle]} disabled={disabled}>
+        <Text style={[mainTextStyle, textStyle]}>
+          {children}
+        </Text>
+      </TouchableOpacity>
+    );
+  }
+  else {
+    return (
+      <TouchableOpacity onPress={onPress} style={[mainButtonStyle, buttonStyle]} disabled={disabled}>
+        <Image
+          style={styles.imageStyle}
+          source={ require('../../../assets/ic_backspace.png') }
+        />
+      </TouchableOpacity>
+    );
+  }
 };
 
 const styles = {
   mainTextStyle: {
     alignSelf: 'center',
     color: (Platform.OS === 'ios') ? '#000' : '#555',
-    fontSize: 18,
+    fontSize: 22,
     fontWeight: (Platform.OS === 'ios') ? '300' : '100',
     margin: (Platform.OS === 'ios') ? 22 : 16
   },
@@ -29,6 +41,13 @@ const styles = {
     borderRadius: 2,
     margin: 1
   },
+  imageStyle: {
+    flex: 1,
+    alignSelf: 'center',
+    margin: 1,
+    width: 50,
+    height: 50
+  }
 }
 
 export { KeypadButton };

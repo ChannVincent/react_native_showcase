@@ -82,7 +82,10 @@ const styles = {
   shortTextStyle: {
     margin: 10,
     marginLeft: 20,
+    marginRight: 20,
+    marginBottom: 40,
     fontSize: 16,
+    lineHeight: 30,
     fontWeight: '400',
     color: "#555"
   }

@@ -1,11 +1,22 @@
 import React, { Component } from 'react';
-import { View, Text, Dimensions, Platform } from 'react-native';
+import { View, Text, Dimensions, Platform, Image } from 'react-native';
 import { connect } from 'react-redux';
 import { navigateToPOIView } from '../actions';
 import { KeypadButton } from './common';
 const { width, height } = Dimensions.get('window');
 
 class KeypadPOI extends Component {
+
+  static navigationOptions = {
+    tabBarLabel: 'Kaypad',
+    // Note: By default the icon is only shown on iOS. Search the showIcon option below.
+    tabBarIcon: ({ tintColor }) => (
+      <Image
+        source={require('../../assets/icon_tab2.png')}
+        style={[styles.icon, {tintColor: tintColor}]}
+      />
+    ),
+  };
 
   state = {
     currentCartelNumber: '',
@@ -173,7 +184,11 @@ const styles = {
     color: "#777",
     fontSize: 30,
     margin: 20
-  }
+  },
+  icon: {
+    width: 26,
+    height: 26,
+  },
 }
 
 const mapStateToProps = (state, ownProps) => {

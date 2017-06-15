@@ -1,10 +1,22 @@
 import React, { Component } from 'react';
-import { View, Text, TouchableOpacity, ListView } from 'react-native';
+import { View, Text, TouchableOpacity, ListView, Image } from 'react-native';
 import { connect } from 'react-redux';
 import { navigateToPOIView } from '../actions';
 import ListItem from './ListItem';
 
 class ListPOI extends Component {
+
+  static navigationOptions = {
+    tabBarLabel: 'Liste',
+    // Note: By default the icon is only shown on iOS. Search the showIcon option below.
+    tabBarIcon: ({ tintColor }) => (
+      <Image
+        source={require('../../assets/icon_tab1.png')}
+        style={[styles.icon, {tintColor: tintColor}]}
+      />
+    ),
+  };
+
   componentWillMount() {
     // boiler plate code for ListView
     const ds = new ListView.DataSource({
@@ -62,7 +74,11 @@ const styles = {
   containerStyle: {
     flex: 1,
     backgroundColor: '#ccc'
-  }
+  },
+  icon: {
+    width: 26,
+    height: 26,
+  },
 }
 
 const mapStateToProps = (state, ownProps) => {

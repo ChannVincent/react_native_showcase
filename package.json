@@ -16,6 +16,9 @@
     "react-native-slider": "^0.9.1",
     "react-native-video": "^1.0.0",
     "react-redux": "^5.0.3",
+    "react-router": "^4.1.1",
+    "react-router-native": "^4.1.1",
+    "react-router-navigation": "^1.0.0-rc.2",
     "redux": "^3.6.0",
     "redux-thunk": "^2.2.0"
   },

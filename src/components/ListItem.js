@@ -4,14 +4,10 @@ import { CardSection, Card } from './common';
 
 class ListItem extends Component {
   render() {
-    const { onPress, title, urlImage } = this.props;
+    const { onPress, title, urlImage, subtitle } = this.props;
     return (
       <TouchableOpacity onPress={ onPress }>
         <Card>
-          <CardSection>
-            <Text style={ styles.titleStyle }>{ title }</Text>
-          </CardSection>
-
           <CardSection style={ styles.cardStyle }>
             <View style={ styles.imageContainerStyle }>
               <Image
@@ -20,6 +16,20 @@ class ListItem extends Component {
               />
             </View>
           </CardSection>
+
+            <CardSection style={{justifyContent: 'space-between'}}>
+              <View style={{flexDirection: 'column'}}>
+                <Text style={ styles.titleStyle }>{ title }</Text>
+                <Text style={ styles.subtitleStyle }>{ subtitle }</Text>
+              </View>
+              <Image
+                style={ styles.arrowStyle }
+                source={require('../../assets/ic_arrow.png')}
+              />
+            </CardSection>
+
+            <View style={{flex: 1, backgroundColor:'#989898', height: 1}}>
+            </View>
         </Card>
       </TouchableOpacity>
     )
@@ -29,21 +39,34 @@ class ListItem extends Component {
 const styles = {
   titleStyle: {
     fontSize: 18,
-    paddingLeft: 15,
-    paddingTop: 10,
-    paddingBottom: 10
+    paddingLeft: 5,
+    paddingTop: 5,
+    paddingBottom: 0,
+  },
+  subtitleStyle: {
+    fontSize: 12,
+    paddingLeft: 5,
+    paddingTop: 5,
+    paddingBottom: 10,
+    color:'#a5a5a5'
   },
   cardStyle: {
-      padding: 0
+    padding: 0
   },
   imageContainerStyle: {
-      flex: 1,
-      height: 250
+    flex: 1,
+    height: 250
   },
   imageStyle: {
     flex: 1,
     height: 250,
     resizeMode: 'cover'
+  },
+  arrowStyle: {
+    width:35,
+    height: 35,
+    tintColor: '#a65b62',
+    alignSelf: 'center',
   }
 }
 

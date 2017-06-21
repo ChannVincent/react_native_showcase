@@ -18,6 +18,7 @@ class ListPOI extends Component {
     return (
       <ListItem
         title={ poi.title }
+        subtitle={ poi.subtitle }
         onPress={ () => { this.onRowPress({ currentPOI: poi }) } }
         urlImage={ (mediaImage != undefined) ? mediaImage.filename + "_l" : "image_not_found" }
         />

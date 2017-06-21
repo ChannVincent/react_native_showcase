@@ -171,7 +171,7 @@ const styles = {
   },
   sliderTrack: {
     height: 2,
-    backgroundColor: '#333',
+    backgroundColor: '#ef9688',
   },
   sliderThumb: {
     top: 11,

@@ -7,17 +7,6 @@ const { width, height } = Dimensions.get('window');
 
 class KeypadPOI extends Component {
 
-  static navigationOptions = {
-    tabBarLabel: 'Kaypad',
-    // Note: By default the icon is only shown on iOS. Search the showIcon option below.
-    tabBarIcon: ({ tintColor }) => (
-      <Image
-        source={require('../../assets/icon_tab2.png')}
-        style={[styles.icon, {tintColor: tintColor}]}
-      />
-    ),
-  };
-
   state = {
     currentCartelNumber: '',
     feedBackText: 'No cartel found'
@@ -184,10 +173,6 @@ const styles = {
     color: "#777",
     fontSize: 30,
     margin: 20
-  },
-  icon: {
-    width: 26,
-    height: 26,
   },
 }
 

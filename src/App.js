@@ -6,6 +6,7 @@ import { BottomNavigation, Tab } from 'react-router-navigation';
 import type { RouterHistory } from 'react-router';
 import Feed from './Feed';
 import Profile from './Profile';
+import ListPOI from './components/ListPOI';
 
 type Props = {
   history: RouterHistory,
@@ -28,14 +29,9 @@ class App extends Component {
         tabActiveTintColor={"#56789A"}
       >
         <Tab
-          path="/feed"
+          path="/ListPOI"
           render={ownProps => (
-            <Feed
-              {...ownProps}
-              ref={(c) => {
-                this.feed = c
-              }}
-            />
+            <ListPOI />
           )}
           onReset={() => {
             if (this.feed && this.feed.listView) {

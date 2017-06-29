@@ -4,8 +4,9 @@ import { Switch, Route, Redirect } from 'react-router';
 import { ConnectedRouter, routerReducer, routerMiddleware } from 'react-router-redux';
 import createHistory from 'history/createMemoryHistory';
 import { Provider } from 'react-redux';
-import { createStore, combineReducers, applyMiddleware } from 'redux';
+import { createStore, applyMiddleware } from 'redux';
 import App from './App';
+import reducers from './reducers';
 
 const styles = StyleSheet.create({
   container: {
@@ -23,7 +24,7 @@ const loggerMiddleware = () => (next) => (action) => {
 }
 
 const store = createStore(
-  combineReducers({ router: routerReducer }),
+  reducers,
   applyMiddleware(
     historyMiddleware,
     loggerMiddleware,

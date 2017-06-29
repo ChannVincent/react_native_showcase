@@ -1,15 +1,11 @@
-/* @flow */
-/* eslint global-require: 0 */
-
-import React from 'react'
-import { StyleSheet, StatusBar, View } from 'react-native'
-import { Switch, Route, Redirect } from 'react-router'
-import { ConnectedRouter, routerReducer, routerMiddleware } from 'react-router-redux'
-import createHistory from 'history/createMemoryHistory'
-import { Provider } from 'react-redux'
-import { createStore, combineReducers, applyMiddleware } from 'redux'
-import { BRAND_COLOR_60 } from './theme'
-import App from './App'
+import React from 'react';
+import { StyleSheet, StatusBar, View } from 'react-native';
+import { Switch, Route, Redirect } from 'react-router';
+import { ConnectedRouter, routerReducer, routerMiddleware } from 'react-router-redux';
+import createHistory from 'history/createMemoryHistory';
+import { Provider } from 'react-redux';
+import { createStore, combineReducers, applyMiddleware } from 'redux';
+import App from './App';
 
 const styles = StyleSheet.create({
   container: {
@@ -17,8 +13,8 @@ const styles = StyleSheet.create({
   },
 })
 
-const history = createHistory()
-const historyMiddleware = routerMiddleware(history)
+const history = createHistory();
+const historyMiddleware = routerMiddleware(history);
 const loggerMiddleware = () => (next) => (action) => {
   if (action && action.type === '@@router/LOCATION_CHANGE') {
     console.log(history.entries.map(({ pathname }) => pathname))

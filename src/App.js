@@ -1,35 +1,82 @@
-import React, { Component } from 'react';
-import { View, Text } from 'react-native';
-import { Provider } from 'react-redux';
-import { createStore, applyMiddleware } from 'redux';
-import ReduxThunk from 'redux-thunk';
-import reducers from './reducers';
-import Router from './Router';
+/* @flow */
 
-import { BottomNavigation, Tab } from 'react-router-navigation';
+import React from 'react'
+import { Platform, Image } from 'react-native'
+import { BottomNavigation, Tab } from 'react-router-navigation'
+import type { RouterHistory } from 'react-router'
+import Feed from './Feed'
+import Profile from './Profile'
+import { NEUTRAL_COLOR_50, BRAND_COLOR_60 } from './theme'
 
-class App extends Component {
-  render() {
+type Props = {
+  history: RouterHistory,
+}
+
+class App extends React.Component<void, Props, void> {
+
+  props: Props
+  feed: Feed
+
+  shouldComponentUpdate(): boolean {
+    return false
+  }
+
+  render(): React$Element<any> {
+    const { history } = this.props
     return (
-      <BottomNavigation lazy={false} tabActiveTintColor="blue">
-          <Tab label="Feed" path="/feed" component={require('./components/ListPOI')} />
-          <Tab label="Profile" path="/profile" component={require('./components/KeypadPOI')} />
+      <BottomNavigation
+        tabTintColor={NEUTRAL_COLOR_50}
+        tabActiveTintColor={BRAND_COLOR_60}
+      >
+        <Tab
+          path="/feed"
+          render={ownProps => (
+            <Feed
+              {...ownProps}
+              ref={(c) => {
+                this.feed = c
+              }}
+            />
+          )}
+          onReset={() => {
+            if (this.feed && this.feed.listView) {
+              this.feed.listView.scrollTo({ y: 0 })
+            }
+          }}
+          label="Feed"
+          renderTabIcon={({ focused, tabTintColor, tabActiveTintColor }) => (
+            <Image
+              source={require('./assets/feed.png')}
+              style={[{
+                marginBottom: Platform.OS === 'android' ? 2.5 : 1,
+                width: Platform.OS === 'android' ? 22.5 : 25,
+                height: Platform.OS === 'android' ? 22.5 : 25,
+                tintColor: focused ? tabActiveTintColor : tabTintColor,
+              }]}
+            />
+          )}
+        />
+        <Tab
+          path="/profile/(likes|bookmarks)"
+          component={Profile}
+          onRequestChangeTab={() => history.replace('/profile/likes')}
+          onReset={() => history.replace('/profile/likes')}
+          label="Profile"
+          renderTabIcon={({ focused, tabTintColor, tabActiveTintColor }) => (
+            <Image
+              source={require('./assets/profile.png')}
+              style={{
+                marginBottom: Platform.OS === 'android' ? 0 : -2,
+                width: Platform.OS === 'android' ? 27.5 : 31,
+                height: Platform.OS === 'android' ? 27.5 : 31,
+                tintColor: focused ? tabActiveTintColor : tabTintColor,
+              }}
+            />
+          )}
+        />
       </BottomNavigation>
     )
   }
 }
 
-export default App;
-
-/*
-<NativeRouter>
-  <Navigation>
-    <BottomNavigation
-      lazy={false}
-      tabActiveTintColor="blue">
-        <Tab label="Feed" path="/KeypadPOI" component={require('./components/KeypadPOI')} />
-        <Tab label="Profile" path="/profile" component={require('./components/List')} />
-    </BottomNavigation>
-  </Navigation>
-</NativeRouter>
-*/
+export default App

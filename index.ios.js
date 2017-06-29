@@ -1,5 +1,6 @@
-import React, { Component } from 'react';
-import { AppRegistry } from 'react-native';
-import App from './src/App'
+/* @flow */
 
-AppRegistry.registerComponent('react_native_showcase', () => App);
+import { AppRegistry } from 'react-native'
+import App from './src'
+
+AppRegistry.registerComponent('Huge', () => App)

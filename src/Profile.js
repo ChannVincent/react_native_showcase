@@ -4,12 +4,11 @@ import React from 'react'
 import { StyleSheet, Platform, View, TouchableOpacity, Text } from 'react-native'
 import { Link } from 'react-router-native'
 import { Tabs, Tab } from 'react-router-navigation'
-import { BRAND_COLOR_50 } from './theme'
 
 const styles = StyleSheet.create({
   tabBar: {
     paddingTop: Platform.OS === 'ios' ? 10 : 0,
-    backgroundColor: BRAND_COLOR_50,
+    backgroundColor: "#abcdef",
   },
   indicatorStyle: {
     backgroundColor: 'white',
@@ -25,11 +24,11 @@ const styles = StyleSheet.create({
     paddingVertical: 10,
     paddingHorizontal: 18,
     borderWidth: 1,
-    borderColor: BRAND_COLOR_50,
+    borderColor: "#abcdef",
     borderRadius: 3,
   },
   span: {
-    color: BRAND_COLOR_50,
+    color: "#abcdef",
   },
   strong: {
     fontWeight: '700',

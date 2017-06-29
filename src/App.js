@@ -1,32 +1,31 @@
 /* @flow */
 
-import React from 'react'
-import { Platform, Image } from 'react-native'
-import { BottomNavigation, Tab } from 'react-router-navigation'
-import type { RouterHistory } from 'react-router'
-import Feed from './Feed'
-import Profile from './Profile'
-import { NEUTRAL_COLOR_50, BRAND_COLOR_60 } from './theme'
+import React, { Component } from 'react';
+import { Platform, Image } from 'react-native';
+import { BottomNavigation, Tab } from 'react-router-navigation';
+import type { RouterHistory } from 'react-router';
+import Feed from './Feed';
+import Profile from './Profile';
 
 type Props = {
   history: RouterHistory,
 }
 
-class App extends React.Component<void, Props, void> {
+class App extends Component {
 
   props: Props
   feed: Feed
 
-  shouldComponentUpdate(): boolean {
-    return false
+  shouldComponentUpdate() {
+    return false;
   }
 
-  render(): React$Element<any> {
-    const { history } = this.props
+  render() {
+    const { history } = this.props;
     return (
       <BottomNavigation
-        tabTintColor={NEUTRAL_COLOR_50}
-        tabActiveTintColor={BRAND_COLOR_60}
+        tabTintColor={"#abcdef"}
+        tabActiveTintColor={"#56789A"}
       >
         <Tab
           path="/feed"
@@ -75,7 +74,7 @@ class App extends React.Component<void, Props, void> {
           )}
         />
       </BottomNavigation>
-    )
+    );
   }
 }
 

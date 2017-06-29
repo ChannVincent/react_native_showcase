@@ -7,14 +7,13 @@ import type { Match } from 'react-router'
 import HeaderTitle from 'react-navigation/src/views/HeaderTitle'
 import List from './List'
 import Article from './Article'
-import { BRAND_COLOR_50 } from './theme'
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
   },
   navBar: {
-    backgroundColor: BRAND_COLOR_50,
+    backgroundColor: "#abcdef",
   },
   title: {
     color: 'white',

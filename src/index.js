@@ -12,7 +12,7 @@ import { BRAND_COLOR_60 } from './theme'
 import App from './App'
 
 const styles = StyleSheet.create({
-  tabs: {
+  container: {
     flex: 1,
   },
 })
@@ -34,6 +34,11 @@ const store = createStore(
   ),
 )
 
+/*
+Start at specfic screen thanks to redirection :
+  + <Redirect to="/profile/bookmarks"/>
+  + Render <App/> with matching url thanks to <Switch/>
+*/
 const Root = (): React$Element<any> => (
   <Provider store={store}>
     <ConnectedRouter history={history}>
@@ -41,22 +46,12 @@ const Root = (): React$Element<any> => (
         <Route
           exact
           path="/"
-          render={() => <Redirect to="/feed" />}
+          render={() => <Redirect to="/profile/bookmarks" />}
         />
         <Route
           path="/"
           render={({ location, match: { url } }) => (
-            <View style={styles.tabs}>
-              <StatusBar
-                barStyle={location.pathname.startsWith(`${url}/search`)
-                  ? 'dark-content'
-                  : 'light-content'
-                }
-                backgroundColor={!location.pathname.startsWith(`${url}/search`)
-                  ? BRAND_COLOR_60
-                  : '#ffffff'
-                }
-              />
+            <View style={styles.container}>
               <App history={history} />
             </View>
           )}

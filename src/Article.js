@@ -4,7 +4,6 @@ import React from 'react'
 import { StyleSheet, View, Text, TouchableOpacity } from 'react-native'
 import type { Match, Location } from 'react-router'
 import { Link } from 'react-router-native'
-import { BRAND_COLOR_50, BRAND_COLOR_60 } from './theme'
 
 const styles = StyleSheet.create({
   scene: {
@@ -18,11 +17,11 @@ const styles = StyleSheet.create({
     paddingVertical: 10,
     paddingHorizontal: 18,
     borderWidth: 1,
-    borderColor: BRAND_COLOR_50,
+    borderColor: "#abcdef",
     borderRadius: 3,
   },
   span: {
-    color: BRAND_COLOR_60,
+    color: "#56789A",
   },
   strong: {
     marginTop: 5,

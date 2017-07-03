@@ -1,5 +1,3 @@
-/* @flow */
-
 import React, { Component } from 'react';
 import { Platform, Image } from 'react-native';
 import { BottomNavigation, Tab } from 'react-router-navigation';
@@ -31,7 +29,12 @@ class App extends Component {
         <Tab
           path="/ListPOI"
           render={ownProps => (
-            <ListPOI />
+            <Feed
+              {...ownProps}
+              ref={(c) => {
+                this.feed = c
+              }}
+            />
           )}
           onReset={() => {
             if (this.feed && this.feed.listView) {

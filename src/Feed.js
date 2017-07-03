@@ -6,6 +6,7 @@ import { Navigation, Card } from 'react-router-navigation'
 import type { Match } from 'react-router'
 import HeaderTitle from 'react-navigation/src/views/HeaderTitle'
 import List from './List'
+import ListPOI from './components/ListPOI';
 import Article from './Article'
 
 const styles = StyleSheet.create({
@@ -46,14 +47,14 @@ class Feed extends Component<void, Props, void> {
           exact
           path={url}
           render={props => (
-            <List
+            <ListPOI
               ref={(c) => {
                 this.listView = c
               }}
               {...props}
             />
           )}
-          title="Feed"
+          title="Liste des POI"
         />
         <Card
           path={`${url}/article/:id`}

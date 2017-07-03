@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
 import { View, Text, TouchableOpacity, ListView } from 'react-native';
+import { Link } from 'react-router-native'
 import { connect } from 'react-redux';
 import { navigateToPOIView } from '../actions';
 import ListItem from './ListItem';
+
+import type { Match } from 'react-router'
 
 class ListPOI extends Component {
   componentWillMount() {
@@ -14,13 +17,17 @@ class ListPOI extends Component {
   }
 
   renderRow(poi) {
+    const { match: { url } } = this.props
     var mediaImage = this.getMainImageOfPOI(poi);
     return (
-      <ListItem
-        title={ poi.title }
-        onPress={ () => { this.onRowPress({ currentPOI: poi }) } }
-        urlImage={ (mediaImage != undefined) ? mediaImage.filename + "_l" : "image_not_found" }
-        />
+      <Link to={`${url}/article/1`}>
+        <View>
+          <ListItem
+            title={ poi.title }
+            urlImage={ (mediaImage != undefined) ? mediaImage.filename + "_l" : "image_not_found" }
+          />
+        </View>
+      </Link>
     );
   }
 
@@ -50,6 +57,9 @@ class ListPOI extends Component {
     return (
       <View style={ styles.containerStyle }>
         <ListView
+          ref={(c) => {
+            this.listView = c
+          }}
           dataSource={ this.dataSource }
           renderRow={ this.renderRow.bind(this) }
           />

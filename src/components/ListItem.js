@@ -6,7 +6,7 @@ class ListItem extends Component {
   render() {
     const { onPress, title, urlImage } = this.props;
     return (
-      <TouchableOpacity onPress={ onPress }>
+      <TouchableOpacity>
         <Card>
           <CardSection>
             <Text style={ styles.titleStyle }>{ title }</Text>

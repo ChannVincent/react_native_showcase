@@ -8,24 +8,34 @@ const { width, height } = Dimensions.get('window');
 class POIView extends Component {
 
   getMainImageMedia() {
+    const currentPOI = this.getPOIFromIdx(this.props.match.params.id);
     var player_role = 15;
     var media_category_image = 1;
-    for (mediaRole of this.props.currentPOI.medias_roles) {
+    for (mediaRole of currentPOI.medias_roles) {
       if (mediaRole.role == player_role && this.getMediaFromIdx(mediaRole.media_idx).media_category == media_category_image) {
         return this.getMediaFromIdx(mediaRole.media_idx);
       }
     }
   }
 
+  getPOIFromIdx(poiId) {
+    for (poi of this.props.pois) {
+      if (poi.idx === parseInt(poiId, 10)) {
+        return poi;
+      }
+    }
+  }
+
   getMediaFromIdx(mediaIdx) {
     for (media of this.props.medias) {
-      if (media.idx == mediaIdx) {
+      if (media.idx === parseInt(mediaIdx, 10)) {
         return media;
       }
     }
   }
 
   render() {
+    const currentPOI = this.getPOIFromIdx(this.props.match.params.id);
     return (
       <ScrollView style={ styles.scrollContainerStyle }>
       <View style={ styles.containerStyle }>
@@ -33,15 +43,14 @@ class POIView extends Component {
             source={{ uri: (this.getMainImageMedia() != undefined) ? this.getMainImageMedia().filename + "_l" : "image_not_found" }}
             style={ styles.imageStyle }
           />
-          <AudioPlayer source={ require('../../assets/media63100.m4a') }/>
           <Text style={ styles.titleStyle }>
-            { this.props.currentPOI.title }
+            { currentPOI.title }
           </Text>
           <Text style={ styles.subtitleStyle }>
-            { this.props.currentPOI.subtitle }
+            { currentPOI.subtitle }
           </Text>
           <Text style={ styles.shortTextStyle }>
-            { this.props.currentPOI.short_text }
+            { currentPOI.short_text }
           </Text>
       </View>
       </ScrollView>
@@ -92,11 +101,11 @@ POIView.propTypes = {
 }
 
 const mapStateToProps = (state, ownProps) => {
-    const { currentPOI } = state.navigation;
       const { medias } = state.appContent;
+      const { pois } = state.appContent;
     return {
-      currentPOI,
-      medias
+      medias,
+      pois
     }
 }
 

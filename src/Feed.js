@@ -59,8 +59,8 @@ class Feed extends Component<void, Props, void> {
         />
         <Card
           path={`${url}/article/:id`}
-          component={Article}
-          title="Item"
+          component={POIView}
+          title="POI"
           backButtonTitle="Back"
           renderTitle={({ title, match }) => (
             <HeaderTitle style={styles.title}>

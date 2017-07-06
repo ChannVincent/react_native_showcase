@@ -8,7 +8,8 @@ import HeaderTitle from 'react-navigation/src/views/HeaderTitle'
 import List from './List'
 import ListPOI from './components/ListPOI';
 import POIView from './components/POIView';
-import Article from './Article'
+import Article from './Article';
+import { connect } from 'react-redux';
 
 const styles = StyleSheet.create({
   container: {
@@ -36,6 +37,14 @@ class Feed extends Component<void, Props, void> {
     return false
   }
 
+  getPOITitleFromIdx(poiId) {
+    for (poi of this.props.pois) {
+      if (poi.idx === parseInt(poiId, 10)) {
+        return poi.title;
+      }
+    }
+  }
+
   render(): React$Element<any> {
     const { match: { url } } = this.props
     return (
@@ -60,11 +69,11 @@ class Feed extends Component<void, Props, void> {
         <Card
           path={`${url}/article/:id`}
           component={POIView}
-          title="POI"
+          title=""
           backButtonTitle="Back"
           renderTitle={({ title, match }) => (
             <HeaderTitle style={styles.title}>
-              {title} {match && match.params.id}
+              {title} {match && this.getPOITitleFromIdx(match.params.id)}
             </HeaderTitle>
           )}
         />
@@ -74,4 +83,11 @@ class Feed extends Component<void, Props, void> {
 
 }
 
-export default Feed
+const mapStateToProps = (state, ownProps) => {
+  const { pois } = state.appContent;
+  return {
+    pois,
+  }
+}
+
+export default connect(mapStateToProps, { })(Feed);

@@ -20,7 +20,7 @@ class ListPOI extends Component {
     const { match: { url } } = this.props
     var mediaImage = this.getMainImageOfPOI(poi);
     return (
-      <Link to={`${url}/article/1`}>
+      <Link to={`${url}/article/${poi.idx}`}>
         <View>
           <ListItem
             title={ poi.title }
@@ -47,10 +47,6 @@ class ListPOI extends Component {
         return media;
       }
     }
-  }
-
-  onRowPress({ currentPOI }) {
-    this.props.navigateToPOIView({ currentPOI });
   }
 
   render() {

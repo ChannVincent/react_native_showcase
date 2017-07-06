@@ -6,22 +6,20 @@ class ListItem extends Component {
   render() {
     const { onPress, title, urlImage } = this.props;
     return (
-      <TouchableOpacity>
-        <Card>
-          <CardSection>
-            <Text style={ styles.titleStyle }>{ title }</Text>
-          </CardSection>
+      <Card>
+        <CardSection>
+          <Text style={ styles.titleStyle }>{ title }</Text>
+        </CardSection>
 
-          <CardSection style={ styles.cardStyle }>
-            <View style={ styles.imageContainerStyle }>
-              <Image
-                style={ styles.imageStyle }
-                source={{ uri: urlImage }}
-              />
-            </View>
-          </CardSection>
-        </Card>
-      </TouchableOpacity>
+        <CardSection style={ styles.cardStyle }>
+          <View style={ styles.imageContainerStyle }>
+            <Image
+              style={ styles.imageStyle }
+              source={{ uri: urlImage }}
+            />
+          </View>
+        </CardSection>
+      </Card>
     )
   }
 }

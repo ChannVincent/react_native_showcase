@@ -56,14 +56,7 @@ class Feed extends Component<void, Props, void> {
         <Card
           exact
           path={url}
-          render={props => (
-            <ListPOI
-              ref={(c) => {
-                this.listView = c
-              }}
-              {...props}
-            />
-          )}
+          component={ListPOI}
           title="Liste des POI"
         />
         <Card

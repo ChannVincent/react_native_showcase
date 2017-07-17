@@ -28,19 +28,7 @@ class App extends Component {
       >
         <Tab
           path="/ListPOI"
-          render={ownProps => (
-            <Feed
-              {...ownProps}
-              ref={(c) => {
-                this.feed = c
-              }}
-            />
-          )}
-          onReset={() => {
-            if (this.feed && this.feed.listView) {
-              this.feed.listView.scrollTo({ y: 0 })
-            }
-          }}
+          component={Feed}
           label="Feed"
           renderTabIcon={({ focused, tabTintColor, tabActiveTintColor }) => (
             <Image

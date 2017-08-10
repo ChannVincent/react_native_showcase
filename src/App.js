@@ -24,7 +24,8 @@ class App extends Component {
     return (
       <BottomNavigation
         tabTintColor={"#aaaaaa"}
-        tabActiveTintColor={"#a65b62"}
+        tabActiveTintColor={"#ffffff"}
+        tabBarStyle={styles.tabStyle}
       >
         <Tab
           path="/ListPOI"
@@ -63,6 +64,12 @@ class App extends Component {
       </BottomNavigation>
     );
   }
+}
+
+const styles = {
+  tabStyle: {
+    backgroundColor: '#a65b62',
+  },
 }
 
 export default App

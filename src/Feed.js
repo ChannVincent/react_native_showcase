@@ -5,7 +5,6 @@ import { StyleSheet } from 'react-native'
 import { Navigation, Card } from 'react-router-navigation'
 import type { Match } from 'react-router'
 import HeaderTitle from 'react-navigation/src/views/HeaderTitle'
-import List from './List'
 import ListPOI from './components/ListPOI';
 import POIView from './components/POIView';
 import { connect } from 'react-redux';

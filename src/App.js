@@ -23,8 +23,8 @@ class App extends Component {
     const { history } = this.props;
     return (
       <BottomNavigation
-        tabTintColor={"#abcdef"}
-        tabActiveTintColor={"#56789A"}
+        tabTintColor={"#aaaaaa"}
+        tabActiveTintColor={"#a65b62"}
       >
         <Tab
           path="/ListPOI"

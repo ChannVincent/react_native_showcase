@@ -8,7 +8,7 @@ import { Tabs, Tab } from 'react-router-navigation'
 const styles = StyleSheet.create({
   tabBar: {
     paddingTop: Platform.OS === 'ios' ? 10 : 0,
-    backgroundColor: "#abcdef",
+    backgroundColor: "#a65b62",
   },
   indicatorStyle: {
     backgroundColor: 'white',
@@ -24,11 +24,11 @@ const styles = StyleSheet.create({
     paddingVertical: 10,
     paddingHorizontal: 18,
     borderWidth: 1,
-    borderColor: "#abcdef",
+    borderColor: "#a65b62",
     borderRadius: 3,
   },
   span: {
-    color: "#abcdef",
+    color: "#a65b62",
   },
   strong: {
     fontWeight: '700',

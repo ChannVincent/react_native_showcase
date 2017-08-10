@@ -8,7 +8,6 @@ import HeaderTitle from 'react-navigation/src/views/HeaderTitle'
 import List from './List'
 import ListPOI from './components/ListPOI';
 import POIView from './components/POIView';
-import Article from './Article';
 import { connect } from 'react-redux';
 
 const styles = StyleSheet.create({
@@ -16,7 +15,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   navBar: {
-    backgroundColor: "#abcdef",
+    backgroundColor: "#a65b62",
   },
   title: {
     color: 'white',

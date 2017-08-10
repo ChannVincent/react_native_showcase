@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Platform, Image } from 'react-native';
 import { BottomNavigation, Tab } from 'react-router-navigation';
 import type { RouterHistory } from 'react-router';
-import Feed from './Feed';
+import NavigationListPOI from './components/NavigationListPOI';
 import Profile from './Profile';
 import ListPOI from './components/ListPOI';
 
@@ -13,7 +13,6 @@ type Props = {
 class App extends Component {
 
   props: Props
-  feed: Feed
 
   shouldComponentUpdate() {
     return false;
@@ -29,11 +28,11 @@ class App extends Component {
       >
         <Tab
           path="/ListPOI"
-          component={Feed}
-          label="Feed"
+          component={NavigationListPOI}
+          label="Liste"
           renderTabIcon={({ focused, tabTintColor, tabActiveTintColor }) => (
             <Image
-              source={require('./assets/feed.png')}
+              source={require('../assets/icon_tab1.png')}
               style={[{
                 marginBottom: Platform.OS === 'android' ? 2.5 : 1,
                 width: Platform.OS === 'android' ? 22.5 : 25,

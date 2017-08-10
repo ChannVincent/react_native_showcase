@@ -5,8 +5,8 @@ import { StyleSheet } from 'react-native'
 import { Navigation, Card } from 'react-router-navigation'
 import type { Match } from 'react-router'
 import HeaderTitle from 'react-navigation/src/views/HeaderTitle'
-import ListPOI from './components/ListPOI';
-import POIView from './components/POIView';
+import ListPOI from './ListPOI';
+import POIView from './POIView';
 import { connect } from 'react-redux';
 
 const styles = StyleSheet.create({
@@ -26,7 +26,7 @@ type Props = {
 }
 
 /* FIX > https://github.com/facebook/react/issues/4936 */
-class Feed extends Component<void, Props, void> {
+class NavigationListPOI extends Component<void, Props, void> {
 
   props: Props
   listView: List
@@ -81,4 +81,4 @@ const mapStateToProps = (state, ownProps) => {
   }
 }
 
-export default connect(mapStateToProps, { })(Feed);
+export default connect(mapStateToProps, { })(NavigationListPOI);

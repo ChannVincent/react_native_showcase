@@ -17,6 +17,7 @@ const styles = StyleSheet.create({
   },
   title: {
     color: 'white',
+    alignSelf: 'center',
   },
 })
 

@@ -103,13 +103,13 @@ class KeypadPOI extends Component {
     }
     else {
       return (
-          <View style={[styles.mainButtonStyle, { backgroundColor: '#48a51a' }]}>
-            <Link to={`${url}/article/${poi.idx}`}>
-              <Text style={[styles.mainTextStyle, { color: '#fff' }]}>
-              Ok
-              </Text>
-            </Link>
-          </View>
+        <View style={[styles.mainButtonStyle, { backgroundColor: '#48a51a' }]}>
+          <Link to={`${url}/article/${poi.idx}`}>
+            <Text style={[styles.mainTextStyle, { color: '#fff' }]}>
+            Ok
+            </Text>
+          </Link>
+        </View>
       )
     }
   }

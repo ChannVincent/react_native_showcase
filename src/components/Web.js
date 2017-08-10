@@ -5,7 +5,7 @@ import { Spinner } from './common';
 import {  } from '../actions';
 const { width, height } = Dimensions.get('window');
 
-class WebViewScreen extends Component {
+class Web extends Component {
 
   state = {
     loading: true
@@ -58,4 +58,4 @@ const mapStateToProps = (state, ownProps) => {
   }
 }
 
-export default connect(mapStateToProps, {})(WebViewScreen);
+export default connect(mapStateToProps, {})(Web);

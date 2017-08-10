@@ -33,7 +33,7 @@ const store = createStore(
 
 /*
 Start at specfic screen thanks to redirection :
-  + <Redirect to="/profile/bookmarks"/>
+  + <Redirect to="/ListPOI"/>
   + Render <App/> with matching url thanks to <Switch/>
 */
 const Root = (): React$Element<any> => (
@@ -43,7 +43,7 @@ const Root = (): React$Element<any> => (
         <Route
           exact
           path="/"
-          render={() => <Redirect to="/profile/bookmarks" />}
+          render={() => <Redirect to="/ListPOI" />}
         />
         <Route
           path="/"

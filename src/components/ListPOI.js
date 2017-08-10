@@ -4,8 +4,7 @@ import { Link } from 'react-router-native'
 import { connect } from 'react-redux';
 import { navigateToPOIView } from '../actions';
 import ListItem from './ListItem';
-
-import type { Match } from 'react-router'
+import type { Match } from 'react-router';
 
 class ListPOI extends Component {
   componentWillMount() {
@@ -17,7 +16,7 @@ class ListPOI extends Component {
   }
 
   renderRow(poi) {
-    const { match: { url } } = this.props
+    const { match: { url } } = this.props;
     var mediaImage = this.getMainImageOfPOI(poi);
     return (
       <Link to={`${url}/article/${poi.idx}`}>

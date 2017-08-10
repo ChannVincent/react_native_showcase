@@ -1,11 +1,20 @@
 import React from 'react';
-import { Text, TouchableOpacity, Platform, Image } from 'react-native';
+import { View, Text, TouchableOpacity, Platform, Image } from 'react-native';
 
 const KeypadButton = ({ onPress, children, buttonStyle, textStyle, disabled=false }) => {
 
   const { mainButtonStyle, mainTextStyle } = styles;
 
-  if (children !== 'Delete') {
+  if (children == 'Ok') {
+    return (
+      <View style={[mainButtonStyle, buttonStyle]}>
+        <Text style={[mainTextStyle, textStyle]}>
+          {children}
+        </Text>
+      </View>
+    )
+  }
+  else if (children !== 'Delete') {
     return (
       <TouchableOpacity onPress={onPress} style={[mainButtonStyle, buttonStyle]} disabled={disabled}>
         <Text style={[mainTextStyle, textStyle]}>

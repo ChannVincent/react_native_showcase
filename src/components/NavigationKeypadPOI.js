@@ -5,7 +5,7 @@ import { StyleSheet } from 'react-native'
 import { Navigation, Card } from 'react-router-navigation'
 import type { Match } from 'react-router'
 import HeaderTitle from 'react-navigation/src/views/HeaderTitle'
-import ListPOI from './ListPOI';
+import KeypadPOI from './KeypadPOI';
 import POIView from './POIView';
 import { connect } from 'react-redux';
 
@@ -26,7 +26,7 @@ type Props = {
 }
 
 /* FIX > https://github.com/facebook/react/issues/4936 */
-class NavigationListPOI extends Component<void, Props, void> {
+class NavigationKeypadPOI extends Component<void, Props, void> {
 
   props: Props
 
@@ -53,8 +53,8 @@ class NavigationListPOI extends Component<void, Props, void> {
         <Card
           exact
           path={url}
-          component={ListPOI}
-          title="Liste des POI"
+          component={KeypadPOI}
+          title="Clavier"
         />
         <Card
           path={`${url}/article/:id`}
@@ -80,4 +80,4 @@ const mapStateToProps = (state, ownProps) => {
   }
 }
 
-export default connect(mapStateToProps, { })(NavigationListPOI);
+export default connect(mapStateToProps, { })(NavigationKeypadPOI);

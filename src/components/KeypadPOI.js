@@ -4,6 +4,8 @@ import { connect } from 'react-redux';
 import { navigateToPOIView } from '../actions';
 import { KeypadButton } from './common';
 const { width, height } = Dimensions.get('window');
+import { Link } from 'react-router-native';
+import type { Match } from 'react-router';
 
 class KeypadPOI extends Component {
 
@@ -30,9 +32,6 @@ class KeypadPOI extends Component {
 
   onValidateClick() {
     var poi = this.getPOIFromCartel(this.state.currentCartelNumber);
-    if (poi != null) {
-      this.props.navigateToPOIView({ currentPOI: poi });
-    }
     this.setState({
       currentCartelNumber: '',
       feedBackText: 'No cartel found'
@@ -89,6 +88,7 @@ class KeypadPOI extends Component {
   }
 
   renderOkButton() {
+    const { match: { url } } = this.props;
     console.log(this.state.currentCartelNumber);
     var poi = this.getPOIFromCartel(this.state.currentCartelNumber);
     if (poi == null) {
@@ -103,12 +103,13 @@ class KeypadPOI extends Component {
     }
     else {
       return (
-        <KeypadButton
-          onPress={ () => { this.onValidateClick() } }
-          textStyle={{ color: '#fff' }}
-          buttonStyle={{ backgroundColor: '#48a51a' }}>
-          Ok
-        </KeypadButton>
+          <View style={[styles.mainButtonStyle, { backgroundColor: '#48a51a' }]}>
+            <Link to={`${url}/article/${poi.idx}`}>
+              <Text style={[styles.mainTextStyle, { color: '#fff' }]}>
+              Ok
+              </Text>
+            </Link>
+          </View>
       )
     }
   }
@@ -173,6 +174,28 @@ const styles = {
     color: "#777",
     fontSize: 30,
     margin: 20
+  },
+
+  mainTextStyle: {
+    alignSelf: 'center',
+    color: (Platform.OS === 'ios') ? '#000' : '#555',
+    fontSize: 22,
+    fontWeight: (Platform.OS === 'ios') ? '300' : '100',
+    margin: (Platform.OS === 'ios') ? 22 : 16
+  },
+  mainButtonStyle: {
+    flex: 1,
+    alignSelf: 'stretch',
+    backgroundColor: '#ccc',
+    borderRadius: 2,
+    margin: 1
+  },
+  imageStyle: {
+    flex: 1,
+    alignSelf: 'center',
+    margin: 1,
+    width: 50,
+    height: 50
   }
 }
 

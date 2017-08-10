@@ -3,7 +3,7 @@ import { Platform, Image } from 'react-native';
 import { BottomNavigation, Tab } from 'react-router-navigation';
 import type { RouterHistory } from 'react-router';
 import NavigationListPOI from './components/NavigationListPOI';
-import Profile from './Profile';
+import NavigationKeypadPOI from './components/NavigationKeypadPOI';
 import ListPOI from './components/ListPOI';
 
 type Props = {
@@ -43,20 +43,18 @@ class App extends Component {
           )}
         />
         <Tab
-          path="/profile/(likes|bookmarks)"
-          component={Profile}
-          onRequestChangeTab={() => history.replace('/profile/likes')}
-          onReset={() => history.replace('/profile/likes')}
-          label="Profile"
+          path="/KeypadPOI"
+          component={NavigationKeypadPOI}
+          label="Clavier"
           renderTabIcon={({ focused, tabTintColor, tabActiveTintColor }) => (
             <Image
-              source={require('./assets/profile.png')}
-              style={{
-                marginBottom: Platform.OS === 'android' ? 0 : -2,
-                width: Platform.OS === 'android' ? 27.5 : 31,
-                height: Platform.OS === 'android' ? 27.5 : 31,
+              source={require('../assets/icon_tab2.png')}
+              style={[{
+                marginBottom: Platform.OS === 'android' ? 2.5 : 1,
+                width: Platform.OS === 'android' ? 22.5 : 25,
+                height: Platform.OS === 'android' ? 22.5 : 25,
                 tintColor: focused ? tabActiveTintColor : tabTintColor,
-              }}
+              }]}
             />
           )}
         />
